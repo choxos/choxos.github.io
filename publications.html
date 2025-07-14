@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | Ahmad Sofi-Mahmudi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed top-0 w-full z-10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-gray-800">Ahmad Sofi-Mahmudi</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
+                <a href="resume.html" class="text-gray-600 hover:text-blue-500">Resume</a>
+                <a href="projects.html" class="text-gray-600 hover:text-blue-500">Projects</a>
+                <a href="publications.html" class="text-gray-600 hover:text-blue-500">Publications</a>
+                <a href="blog.html" class="text-gray-600 hover:text-blue-500">Blog</a>
+                <a href="contact.html" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="nav-toggle" class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="nav-menu" class="hidden md:hidden">
+            <a href="index.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-200">Home</a>
+            <a href="resume.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-200">Resume</a>
+            <a href="projects.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-200">Projects</a>
+            <a href="publications.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-200">Publications</a>
+            <a href="blog.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-200">Blog</a>
+            <a href="contact.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-200">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-24">
+        <h1 class="text-4xl font-bold text-center text-gray-800 mb-12">Publications</h1>
+
+        <!-- Scholar Stats -->
+        <div id="scholar-stats" class="flex justify-center space-x-8 mb-12">
+            <!-- Stats will be loaded here -->
+        </div>
+
+        <div id="publications-container" class="space-y-6">
+            <!-- Publications will be loaded here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6">
+                <a href="https://www.linkedin.com/in/asofimahmudi" target="_blank" class="text-gray-400 hover:text-white mx-4 text-2xl"><i class="fab fa-linkedin"></i></a>
+                <a href="https://scholar.google.com/citations?user=gTWPaFYAAAAJ" target="_blank" class="text-gray-400 hover:text-white mx-4 text-2xl"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://github.com/choxos" target="_blank" class="text-gray-400 hover:text-white mx-4 text-2xl"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/AhmadSofi" target="_blank" class="text-gray-400 hover:text-white mx-4 text-2xl"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2025 Ahmad Sofi-Mahmudi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/publications.js"></script>
+    <script>
+        document.getElementById('nav-toggle').addEventListener('click', function() {
+            var menu = document.getElementById('nav-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html> 

@@ -1,0 +1,202 @@
+[
+    {
+        "name": "TOP-Guidelines",
+        "description": "A shiny app for TOP Guidelines",
+        "url": "https://github.com/choxos/TOP-Guidelines",
+        "stars": 0,
+        "forks": 0,
+        "language": "R"
+    },
+    {
+        "name": "cnma",
+        "description": "An R package for conducing component network meta-analysis (cNMA) using Stan",
+        "url": "https://github.com/choxos/cnma",
+        "stars": 0,
+        "forks": 0,
+        "language": "R"
+    },
+    {
+        "name": "OpenScienceDatabase",
+        "description": "A place to share the best practices in Open Science",
+        "url": "https://github.com/choxos/OpenScienceDatabase",
+        "stars": 0,
+        "forks": 0,
+        "language": null
+    },
+    {
+        "name": "NICE-DSU-TSD-RAG",
+        "description": "A Retrieval-Augmented Generation (RAG) platform for NICE DSU TSDs",
+        "url": "https://github.com/choxos/NICE-DSU-TSD-RAG",
+        "stars": 0,
+        "forks": 0,
+        "language": null
+    },
+    {
+        "name": "HealthResearchRAG",
+        "description": "A Retrieval-Augmented Generation (RAG) platform designed for health research",
+        "url": "https://github.com/choxos/HealthResearchRAG",
+        "stars": 0,
+        "forks": 0,
+        "language": "Python"
+    },
+    {
+        "name": "CoE_OralHealth",
+        "description": "Certainty of Evidence in Oral Health Research",
+        "url": "https://github.com/choxos/CoE_OralHealth",
+        "stars": 0,
+        "forks": 0,
+        "language": null
+    },
+    {
+        "name": "covid-fairness",
+        "description": "Evaluating FAIRness of COVID-19-related research data",
+        "url": "https://github.com/choxos/covid-fairness",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript"
+    },
+    {
+        "name": "CoE-Cochrane",
+        "description": null,
+        "url": "https://github.com/choxos/CoE-Cochrane",
+        "stars": 0,
+        "forks": 0,
+        "language": null
+    },
+    {
+        "name": "tte",
+        "description": null,
+        "url": "https://github.com/choxos/tte",
+        "stars": 0,
+        "forks": 0,
+        "language": "R"
+    },
+    {
+        "name": "evidencegaps",
+        "description": "Repository for Evidence Gaps project",
+        "url": "https://github.com/choxos/evidencegaps",
+        "stars": 0,
+        "forks": 0,
+        "language": "R"
+    },
+    {
+        "name": "forester",
+        "description": null,
+        "url": "https://github.com/choxos/forester",
+        "stars": 0,
+        "forks": 0,
+        "language": null
+    },
+    {
+        "name": "justadd",
+        "description": null,
+        "url": "https://github.com/choxos/justadd",
+        "stars": 0,
+        "forks": 0,
+        "language": null
+    },
+    {
+        "name": "netmetal",
+        "description": "NetMetal",
+        "url": "https://github.com/choxos/netmetal",
+        "stars": 0,
+        "forks": 0,
+        "language": "R"
+    },
+    {
+        "name": "baynet",
+        "description": "Bayesian Network Meta-Analysis Shiny App",
+        "url": "https://github.com/choxos/baynet",
+        "stars": 0,
+        "forks": 0,
+        "language": null
+    },
+    {
+        "name": "metanalysis",
+        "description": null,
+        "url": "https://github.com/choxos/metanalysis",
+        "stars": 0,
+        "forks": 0,
+        "language": "R"
+    },
+    {
+        "name": "meastimate",
+        "description": "A simple Shiny app for calculating mean and standard deviations (SDs) of studies to be used in meta-analyses",
+        "url": "https://github.com/choxos/meastimate",
+        "stars": 0,
+        "forks": 0,
+        "language": "R"
+    },
+    {
+        "name": "responder_analysis",
+        "description": null,
+        "url": "https://github.com/choxos/responder_analysis",
+        "stars": 0,
+        "forks": 0,
+        "language": "R"
+    },
+    {
+        "name": "nhmrc-trials",
+        "description": null,
+        "url": "https://github.com/choxos/nhmrc-trials",
+        "stars": 0,
+        "forks": 0,
+        "language": null
+    },
+    {
+        "name": "nihrtrials",
+        "description": null,
+        "url": "https://github.com/choxos/nihrtrials",
+        "stars": 0,
+        "forks": 0,
+        "language": null
+    },
+    {
+        "name": "retractions",
+        "description": null,
+        "url": "https://github.com/choxos/retractions",
+        "stars": 0,
+        "forks": 0,
+        "language": null
+    },
+    {
+        "name": "funded-trials",
+        "description": null,
+        "url": "https://github.com/choxos/funded-trials",
+        "stars": 0,
+        "forks": 0,
+        "language": "R"
+    },
+    {
+        "name": "nihtrials",
+        "description": null,
+        "url": "https://github.com/choxos/nihtrials",
+        "stars": 0,
+        "forks": 0,
+        "language": null
+    },
+    {
+        "name": "dentalcariestrials",
+        "description": null,
+        "url": "https://github.com/choxos/dentalcariestrials",
+        "stars": 0,
+        "forks": 0,
+        "language": "R"
+    },
+    {
+        "name": "irandentalschoolsranking",
+        "description": "PCA analysis for ranking the dental schools in Iran",
+        "url": "https://github.com/choxos/irandentalschoolsranking",
+        "stars": 0,
+        "forks": 0,
+        "language": "HTML"
+    },
+    {
+        "name": "medical-transparency",
+        "description": "Assessing the transparency of papers published in medical journals",
+        "url": "https://github.com/choxos/medical-transparency",
+        "stars": 0,
+        "forks": 0,
+        "language": "JavaScript"
+    }
+]
