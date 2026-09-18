@@ -1,129 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad Sofi-Mahmudi | Home</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmad Sofi-Mahmudi · choxos</title>
+<meta name="description" content="Ahmad Sofi-Mahmudi: dentist turned research methodologist and R developer. Evidence synthesis, indirect treatment comparisons, meta-research, open science, and GNU/Linux.">
+<meta name="author" content="Ahmad Sofi-Mahmudi">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0b0d0c">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Ahmad Sofi-Mahmudi · choxos">
+<meta property="og:description" content="R packages, evidence synthesis, meta-research, and open science tooling.">
+<meta property="og:url" content="https://choxos.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@asofimahmudi">
+<link rel="canonical" href="https://choxos.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0d0c'/%3E%3Ctext x='5' y='22' font-family='monospace' font-size='17' font-weight='700' fill='%23ffb454'%3E%3E_%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  // Apply the saved theme before first paint.
+  try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ahmad Sofi-Mahmudi",
+  "url": "https://choxos.github.io/",
+  "email": "mailto:a.sofimahmudi@gmail.com",
+  "jobTitle": "Research Associate, Comparative Effectiveness",
+  "worksFor": {"@type": "Organization", "name": "Cytel"},
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "McMaster University"},
+    {"@type": "CollegeOrUniversity", "name": "Shahid Beheshti University of Medical Sciences"}
+  ],
+  "address": {"@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "ON", "addressCountry": "CA"},
+  "sameAs": [
+    "https://github.com/choxos",
+    "https://orcid.org/0000-0001-6829-0823",
+    "https://scholar.google.com/citations?user=gTWPaFYAAAAJ",
+    "https://www.linkedin.com/in/asofimahmudi/",
+    "https://twitter.com/asofimahmudi",
+    "https://choxos.medium.com"
+  ]
+}
+</script>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body>
+<a class="skip" href="#about">Skip to content</a>
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md fixed top-0 w-full z-10">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-gray-800">Ahmad Sofi-Mahmudi</a>
-            <div class="hidden md:flex space-x-6 items-center">
-                <a href="index.html" class="text-gray-600 hover:text-blue-500">Home</a>
-                <a href="resume.html" class="text-gray-600 hover:text-blue-500">Resume</a>
-                <a href="projects.html" class="text-gray-600 hover:text-blue-500">Projects</a>
-                <a href="publications.html" class="text-gray-600 hover:text-blue-500">Publications</a>
-                <a href="blog.html" class="text-gray-600 hover:text-blue-500">Blog</a>
-                <a href="contact.html" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Contact</a>
-            </div>
-            <div class="md:hidden">
-                <button id="nav-toggle" class="text-gray-800 focus:outline-none">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
+<!-- ============================== HERO ============================== -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="prompt" aria-hidden="true"><span class="ps1">ahmad@choxos</span><span class="ps-sep">:</span><span class="ps-path">~</span><span class="ps-dollar">$</span> <span id="typed">whoami</span><span class="cursor"></span></p>
+    <h1 class="name">Ahmad <br>Sofi&#8209;Mahmudi<span class="blink">_</span></h1>
+    <p class="tagline">Dentist turned research methodologist. I write <b class="hl-r">R packages</b> for evidence synthesis, build <b class="hl-c">meta-research</b> pipelines that audit how open science really is, and ship interactive tools on <b class="hl-g">GNU/Linux</b>.</p>
+
+    <div class="hero-grid">
+      <section class="win" aria-label="System summary">
+        <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">~ : neofetch</span></div>
+        <div class="neofetch">
+<pre class="tooth" aria-hidden="true">   .-'''-.   .-'''-.
+  /       '-'       \
+ |                   |
+ |                   |
+  \                 /
+   |               |
+   |     .---.     |
+   |    /     \    |
+    \  |       |  /
+     '-'       '-'</pre>
+          <dl class="nf">
+            <div class="nf-head"><span class="k">ahmad</span>@<span class="k">choxos</span></div>
+            <div class="nf-rule" aria-hidden="true">-------------</div>
+            <div><dt>OS</dt><dd>GNU/Linux, since 2010</dd></div>
+            <div><dt>Host</dt><dd>Cytel · Comparative Effectiveness</dd></div>
+            <div><dt>Kernel</dt><dd>DDS 2019 · MSc HRM 2024</dd></div>
+            <div><dt>Uptime</dt><dd><span data-uptime>17</span> years of open source</dd></div>
+            <div><dt>Packages</dt><dd><span data-stat="cran">7</span> (cran), <span data-stat="dev">2</span> (dev), <span data-stat="repos">62</span> (git)</dd></div>
+            <div><dt>Shell</dt><dd>R · Stan · Python · Julia</dd></div>
+            <div><dt>Methods</dt><dd>NMA · MAIC · STC · ML-NMR</dd></div>
+            <div><dt>Citations</dt><dd><span data-stat="citations">5,225</span> · h <span data-stat="h">18</span> · i10 <span data-stat="i10">23</span></dd></div>
+            <div><dt>Locale</dt><dd>ku · fa · en_CA · fr</dd></div>
+            <div><dt>Location</dt><dd>Toronto, Canada</dd></div>
+            <div class="swatches" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </dl>
         </div>
-        <!-- Mobile Menu -->
-        <div id="nav-menu" class="hidden md:hidden">
-            <a href="index.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-200">Home</a>
-            <a href="resume.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-200">Resume</a>
-            <a href="projects.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-200">Projects</a>
-            <a href="publications.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-200">Publications</a>
-            <a href="blog.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-200">Blog</a>
-            <a href="contact.html" class="block px-6 py-2 text-gray-600 hover:bg-gray-200">Contact</a>
+      </section>
+
+      <figure class="win net-win">
+        <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">evidence_network.R</span><button class="win-btn" id="net-shake" type="button" title="Perturb the network">jitter()</button></div>
+        <canvas id="net" aria-label="Interactive network of research topics. Node size shows how many papers and repositories mention a topic; edges show topics that appear together." role="img"></canvas>
+        <figcaption><b>Fig. 1.</b> My work as a network meta-analysis. Node area ∝ papers + repos on a topic; edge width ∝ co-occurrence. Fitted live from this site's data. Drag a node.</figcaption>
+      </figure>
+    </div>
+
+    <p class="hint">Press <kbd>`</kbd> for a real shell, <kbd>?</kbd> for keys, <kbd>1</kbd>…<kbd>8</kbd> to jump.</p>
+  </div>
+</header>
+
+<main>
+<!-- ============================== ABOUT ============================== -->
+<section id="about" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="cmd"><span class="ps-path">~</span><span class="ps-dollar">$</span> cat README.md</p>
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <article class="readme">
+        <p class="md-h"># whoami</p>
+        <p>I trained as a dentist in Tehran, practiced as a community dentist in Kurdistan, and then followed the questions upstream: how do we know a treatment works, and can we trust the papers that say so? That took me to an MSc in Health Research Methodology at McMaster and into evidence synthesis for good.</p>
+        <p>Today I run pairwise and network meta-analyses and population-adjusted indirect treatment comparisons (MAIC, STC, ML-NMR) as a Research Associate in Comparative Effectiveness at <b>Cytel</b>. Outside the day job I turn methods into software: CRAN packages, open textbooks, and browser tools that anyone can rerun and audit.</p>
+        <p>I have used GNU/Linux since 2010, translated <i>A Byte of Python</i> into Persian in 2009, and have served Cochrane for most of a decade, from Cochrane Iran to the Cochrane Council.</p>
+        <p class="md-h">## current focus</p>
+        <ul class="md-list">
+          <li>Population-adjusted indirect treatment comparisons and disconnected evidence networks</li>
+          <li>Target trial emulation and causal inference for real-world evidence</li>
+          <li>Research integrity tooling: retractions, citations, DOIs, and transparency indicators</li>
+          <li>Interactive teaching tools for anatomy, mathematics, and statistics</li>
+        </ul>
+      </article>
+      <aside class="principles">
+        <p class="md-h">## research software should be</p>
+        <ol>
+          <li><b>Reproducible</b> enough for another analyst to rerun it.</li>
+          <li><b>Transparent</b> enough for a reviewer to audit it.</li>
+          <li><b>Documented</b> enough for a tired user to understand it.</li>
+          <li><b>Small and boring</b> where possible; cleverness is not a substitute for reliability.</li>
+        </ol>
+        <p class="motto">Open science over closed claims.<br>Reproducible code over screenshots.<br>Useful tools over vanity metrics.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PACKAGES ============================== -->
+<section id="packages" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="cmd"><span class="ps-path">~/r-pkgs</span><span class="ps-dollar">$</span> Rscript -e 'library(help = "choxos")'</p>
+      <h2>R packages</h2>
+      <p class="lede">On CRAN, documented with pkgdown, and tested. Indirect comparisons, responder analysis, and the plumbing of research integrity.</p>
+    </div>
+    <div class="console" id="install">
+      <div class="console-bar"><span>R console</span><button class="copy" type="button" data-copy-from="install-code">copy</button></div>
+      <pre><code id="install-code"><span class="c-prompt">&gt;</span> install.packages(c(<span class="c-str">"mlumr"</span>, <span class="c-str">"respondeR"</span>, <span class="c-str">"retraction"</span>, <span class="c-str">"rfair"</span>, <span class="c-str">"rtransparency"</span>, <span class="c-str">"krt"</span>, <span class="c-str">"sysreqr"</span>))</code></pre>
+    </div>
+    <div class="pkg-grid" id="pkg-grid" aria-live="polite"></div>
+
+    <h3 class="sub">Shiny apps <span class="muted">· shinyapps.io</span></h3>
+    <ul class="apps">
+      <li><a href="https://choxos.shinyapps.io/metanalysis/" target="_blank" rel="noopener"><b>metanalysis</b><span>A point and click app for all kinds of pairwise meta-analysis.</span></a></li>
+      <li><a href="https://choxos.shinyapps.io/RoB2/" target="_blank" rel="noopener"><b>RoB2</b><span>Risk of Bias 2 (RoB 2) assessment for randomized trials.</span></a></li>
+      <li><a href="https://choxos.shinyapps.io/responder_analysis/" target="_blank" rel="noopener"><b>responder_analysis</b><span>Impute responder proportions and risk differences from continuous data, four methods.</span></a></li>
+      <li><a href="https://choxos.shinyapps.io/meastimate/" target="_blank" rel="noopener"><b>meastimate</b><span>Impute means and SDs when extracting data for meta-analyses.</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== PLAYGROUND ============================== -->
+<section id="playground" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="cmd"><span class="ps-path">~/www</span><span class="ps-dollar">$</span> ls --live</p>
+      <h2>Playground</h2>
+      <p class="lede">Things you can open right now. No accounts, no backends; most of them fit the model in your browser.</p>
+    </div>
+    <div class="play-grid">
+      <a class="play big" href="https://omfatlas.xera.ac" target="_blank" rel="noopener" style="--c:var(--amber)">
+        <span class="play-kind">3D atlas · WebGL</span>
+        <span class="play-name">OMF Atlas</span>
+        <span class="play-desc">Interactive 3D atlas of oral and maxillofacial anatomy for dental education: 643 BodyParts3D meshes plus 77 schematic nerves, vessels, glands, and sinuses fitted to the skull's own landmarks.</span>
+        <span class="play-foot"><span data-stars="OMFAtlas"></span>omfatlas.xera.ac ↗</span>
+      </a>
+      <a class="play big" href="https://choxos.github.io/Mathematics-of-ITC/" target="_blank" rel="noopener" style="--c:var(--purple)">
+        <span class="play-kind">Textbook · Coq</span>
+        <span class="play-name">Mathematics of ITC</span>
+        <span class="play-desc">A graduate pure-mathematics textbook on indirect treatment comparisons, from linear algebra to MAIC, STC, and ML-NMR. Every result proved, with a machine-checked Coq companion.</span>
+        <span class="play-foot"><span data-stars="Mathematics-of-ITC"></span>read online ↗</span>
+      </a>
+      <a class="play" href="https://nmaviz.xera.ac" target="_blank" rel="noopener" style="--c:var(--cyan)">
+        <span class="play-kind">Network meta-analysis</span>
+        <span class="play-name">NMAViz</span>
+        <span class="play-desc">Fits the graph-theoretical NMA model in your browser and draws the evidence eight ways: flow, contributions, a Hodge split of inconsistency, diffusion, and springs.</span>
+        <span class="play-foot">nmaviz.xera.ac ↗</span>
+      </a>
+      <a class="play" href="https://choxos.github.io/autometaresearch/" target="_blank" rel="noopener" style="--c:var(--green)">
+        <span class="play-kind">Meta-research · LLM</span>
+        <span class="play-name">autometaresearch</span>
+        <span class="play-desc">Meta-research studies designed, run, and reviewed by language models, published in full: the search, the code, and the independent reviews.</span>
+        <span class="play-foot">read the studies ↗</span>
+      </a>
+      <a class="play" href="https://metacan.xera.ac" target="_blank" rel="noopener" style="--c:var(--red)">
+        <span class="play-kind">Bibliometrics · bilingual</span>
+        <span class="play-name">MétaCan</span>
+        <span class="play-desc">A provenance-tracked map of Canadian metaresearch, with a reproducible pipeline and a bilingual web app.</span>
+        <span class="play-foot">metacan.xera.ac ↗</span>
+      </a>
+      <a class="play" href="https://catigraphy.xera.ac" target="_blank" rel="noopener" style="--c:var(--orange)">
+        <span class="play-kind">CT atlas</span>
+        <span class="play-name">Catigraphy</span>
+        <span class="play-desc">An interactive CT atlas of the domestic cat, rebuilt from twelve published scans of one specimen. Rotate it, section it.</span>
+        <span class="play-foot">catigraphy.xera.ac ↗</span>
+      </a>
+      <a class="play" href="https://howthingswork.xera.ac" target="_blank" rel="noopener" style="--c:var(--cyan)">
+        <span class="play-kind">3D lessons</span>
+        <span class="play-name">How Things Work</span>
+        <span class="play-desc">Walk a neighborhood of everyday machines, open them up, turn the controls, and follow the motion.</span>
+        <span class="play-foot">howthingswork.xera.ac ↗</span>
+      </a>
+      <a class="play" href="https://milleviz.xera.ac" target="_blank" rel="noopener" style="--c:var(--purple)">
+        <span class="play-kind">Mathematics</span>
+        <span class="play-name">MilleViz</span>
+        <span class="play-desc">The seven Millennium Prize Problems, explained from the picture up, with figures that compute what they show.</span>
+        <span class="play-foot">milleviz.xera.ac ↗</span>
+      </a>
+      <a class="play" href="https://fracgen.xera.ac" target="_blank" rel="noopener" style="--c:var(--green)">
+        <span class="play-kind">Generative art</span>
+        <span class="play-name">FracGen</span>
+        <span class="play-desc">Draw a line, move its points, and watch it become a fractal. Export an image or an animation.</span>
+        <span class="play-foot">fracgen.xera.ac ↗</span>
+      </a>
+      <a class="play" href="https://geowords.xera.ac" target="_blank" rel="noopener" style="--c:var(--amber)">
+        <span class="play-kind">Etymology · globe</span>
+        <span class="play-name">Geography Words</span>
+        <span class="play-desc">English words with a place hidden inside. Search <i>denim</i> and the globe flies to Nîmes.</span>
+        <span class="play-foot">geowords.xera.ac ↗</span>
+      </a>
+      <a class="play" href="https://choxos.github.io/game-of-life/" target="_blank" rel="noopener" style="--c:var(--red)">
+        <span class="play-kind">Life tables</span>
+        <span class="play-name">Game of Life</span>
+        <span class="play-desc">How much of your life is actually yours? Your remaining weeks from UN life tables, minus sleep, work, and commuting.</span>
+        <span class="play-foot">open ↗</span>
+      </a>
+      <a class="play" href="https://choxos.github.io/OralHealthBook/" target="_blank" rel="noopener" style="--c:var(--orange)">
+        <span class="play-kind">Open book</span>
+        <span class="play-name">The Evidence Behind</span>
+        <span class="play-desc">An audit of the UK's <i>Delivering Better Oral Health</i>: does the evidence each recommendation cites answer the question it asks?</span>
+        <span class="play-foot">read ↗</span>
+      </a>
+      <a class="play" href="https://choxos.github.io/ITC-open-problems/" target="_blank" rel="noopener" style="--c:var(--cyan)">
+        <span class="play-kind">Catalog</span>
+        <span class="play-name">Open problems in ITC</span>
+        <span class="play-desc">An audited catalog of unsolved methods problems in indirect comparisons, each with a verification verdict. It has a sibling for target trial emulation.</span>
+        <span class="play-foot">browse ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PROJECTS ============================== -->
+<section id="projects" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="cmd"><span class="ps-path">~</span><span class="ps-dollar">$</span> gh repo list choxos --source</p>
+      <h2>Repositories</h2>
+      <p class="lede">Public repositories I authored (stubs without a README are skipped), freshest first. Filter by language or grep the descriptions and topics.</p>
+    </div>
+    <div class="toolbar">
+      <label class="grep"><span class="ps-dollar">$</span> grep -i "<input id="repo-q" type="search" placeholder="stan, retraction, 3d…" autocomplete="off" spellcheck="false" aria-label="Filter repositories">"</label>
+      <div class="chips" id="repo-langs" role="group" aria-label="Language filter"></div>
+      <div class="chips" role="group" aria-label="Sort">
+        <button class="chip" type="button" data-sort="updated" aria-pressed="true">--sort=updated</button>
+        <button class="chip" type="button" data-sort="stars" aria-pressed="false">--sort=stars</button>
+      </div>
+    </div>
+    <div class="ls" id="repo-list" aria-live="polite"></div>
+    <button class="more" id="repo-more" type="button" hidden></button>
+  </div>
+</section>
+
+<!-- ============================== PAPERS ============================== -->
+<section id="papers" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="cmd"><span class="ps-path">~/papers</span><span class="ps-dollar">$</span> SELECT * FROM openalex WHERE author = 'A5075399321';</p>
+      <h2>Publications</h2>
+      <p class="lede">Refreshed from <a href="https://openalex.org/A5075399321" target="_blank" rel="noopener">OpenAlex</a>. Consortium papers (the Global Burden of Disease collaborations) are counted too, which is why the citations run high. Also on <a href="https://scholar.google.com/citations?user=gTWPaFYAAAAJ" target="_blank" rel="noopener">Google Scholar</a> and <a href="https://orcid.org/0000-0001-6829-0823" target="_blank" rel="noopener">ORCID</a>.</p>
+    </div>
+
+    <div class="stats" id="pub-stats">
+      <div><b data-stat="citations">5,225</b><span>citations</span></div>
+      <div><b data-stat="h">18</b><span>h-index</span></div>
+      <div><b data-stat="i10">23</b><span>i10-index</span></div>
+      <div><b data-stat="works">69</b><span>papers &amp; preprints</span></div>
+      <div><b data-stat="first">27</b><span>first-authored</span></div>
+    </div>
+
+    <figure class="spark">
+      <div class="spark-bars" id="spark" role="img" aria-label="Papers per year"></div>
+      <figcaption>papers per year <span class="muted">· click a bar to filter</span></figcaption>
+    </figure>
+
+    <div class="tabs" role="tablist" aria-label="Output type">
+      <button role="tab" class="tab" aria-selected="true" aria-controls="tab-papers" id="t-papers">papers</button>
+      <button role="tab" class="tab" aria-selected="false" aria-controls="tab-talks" id="t-talks" tabindex="-1">talks</button>
+      <button role="tab" class="tab" aria-selected="false" aria-controls="tab-books" id="t-books" tabindex="-1">books</button>
+    </div>
+
+    <div role="tabpanel" id="tab-papers" aria-labelledby="t-papers">
+      <div class="toolbar">
+        <label class="grep"><span class="ps-dollar">$</span> grep -i "<input id="pub-q" type="search" placeholder="meta-research, caries, migraine…" autocomplete="off" spellcheck="false" aria-label="Filter publications">"</label>
+        <div class="chips" role="group" aria-label="Publication filter">
+          <button class="chip" type="button" data-pf="all" aria-pressed="true">--all</button>
+          <button class="chip" type="button" data-pf="first" aria-pressed="false">--first-author</button>
+          <button class="chip" type="button" data-pf="cited" aria-pressed="false">--cited&gt;=20</button>
+          <button class="chip" type="button" data-pf="preprint" aria-pressed="false">--preprints</button>
         </div>
-    </nav>
+      </div>
+      <p class="count" id="pub-count" aria-live="polite"></p>
+      <ol class="pubs" id="pub-list"></ol>
+      <button class="more" id="pub-more" type="button" hidden></button>
+    </div>
 
-    <!-- Hero Section -->
-    <header class="bg-white pt-32 pb-16">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2">
-                    <h1 class="text-5xl font-bold text-gray-800 mb-4">Ahmad Sofi-Mahmudi</h1>
-                    <p class="text-xl text-blue-500 font-semibold mb-6">Meta-researcher | Data Scientist | Public Health Advocate</p>
-                    <p class="text-gray-600 mb-8">
-                        I am a dentist, meta-researcher, and public health advocate with a passion for research transparency and evidence-based healthcare. I am committed to improving the quality of research and promoting open science practices.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="resume.html" class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600">View Resume</a>
-                        <a href="projects.html" class="bg-gray-200 text-gray-800 px-6 py-3 rounded-md hover:bg-gray-300">See Projects</a>
-                    </div>
-                </div>
-                <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-                    <img src="https://via.placeholder.com/400" alt="Ahmad Sofi-Mahmudi" class="rounded-full shadow-lg w-80 h-80 object-cover">
-                </div>
-            </div>
+    <div role="tabpanel" id="tab-talks" aria-labelledby="t-talks" hidden>
+      <ol class="pubs static">
+        <li><span class="y">2026</span><div><p class="pt">Assessing the impact of missingness in treatment effect modifiers on bias in anchored and unanchored MAIC</p><p class="pm">ISPOR 2026 · <i>Value in Health</i> abstract MSR249</p></div></li>
+        <li><span class="y">2025</span><div><p class="pt">Retractions and Democracy Index scores across 167 countries</p><p class="pm">10th International Congress on Peer Review and Scientific Publication</p></div></li>
+        <li><span class="y">2024</span><div><p class="pt">Research transparency in 59 fields of medical and health sciences</p><p class="pm">2nd Global Evidence Summit, Prague</p></div></li>
+        <li><span class="y">2024</span><div><p class="pt">COVID-19-related research data availability and quality according to the FAIR principles</p><p class="pm">2nd Global Evidence Summit, Prague</p></div></li>
+        <li><span class="y">2024</span><div><p class="pt">Diversity in Cochrane Reviews authorship</p><p class="pm">2nd Global Evidence Summit, Prague</p></div></li>
+        <li><span class="y">2023</span><div><p class="pt">Transparency of COVID-19-related research</p><p class="pm">27th Cochrane Colloquium, London · HEI Research Day, McMaster</p></div></li>
+        <li><span class="y">2022</span><div><p class="pt">Open science practices in oral health research: implications and importance</p><p class="pm">5th Congress of the Iranian Association of Community Oral Health</p></div></li>
+        <li><span class="y">2019</span><div><p class="pt">Frequency and risk of bias of randomized controlled trials included in Cochrane Oral Health systematic reviews</p><p class="pm">26th Cochrane Colloquium, Santiago</p></div></li>
+      </ol>
+    </div>
+
+    <div role="tabpanel" id="tab-books" aria-labelledby="t-books" hidden>
+      <ol class="pubs static">
+        <li><span class="y">2026</span><div><p class="pt"><a href="https://choxos.github.io/Mathematics-of-ITC/" target="_blank" rel="noopener">Mathematics of Indirect Treatment Comparisons</a></p><p class="pm">Open textbook, with a Coq companion</p></div></li>
+        <li><span class="y">2026</span><div><p class="pt"><a href="https://choxos.github.io/OralHealthBook/" target="_blank" rel="noopener">The Evidence Behind: what we actually know about looking after your teeth</a></p><p class="pm">Open book</p></div></li>
+        <li><span class="y">2021</span><div><p class="pt">Sugars and Dental Caries</p><p class="pm">Persian translation · Dandane, Tehran</p></div></li>
+        <li><span class="y">2021</span><div><p class="pt">Caries Prevention Partnership: Making Prevention a Priority</p><p class="pm">Persian translation · Dandane, Tehran</p></div></li>
+        <li><span class="y">2021</span><div><p class="pt">Oral Cancer: Prevention and Patient Management</p><p class="pm">Persian translation · Dandane, Tehran</p></div></li>
+        <li><span class="y">2020</span><div><p class="pt"><a href="https://fa.testingtreatments.org/book/" target="_blank" rel="noopener">Testing Treatments</a></p><p class="pm">Persian translation, with Bita Mesgarpour · Farhameh, Tehran</p></div></li>
+        <li><span class="y">2017</span><div><p class="pt"><a href="http://dahaan.ir/book" target="_blank" rel="noopener">Delivering Better Oral Health: an evidence-based toolkit for prevention</a></p><p class="pm">Persian translation · Dandane, Tehran</p></div></li>
+        <li><span class="y">2015</span><div><p class="pt"><a href="https://github.com/choxos/ubuntubook" target="_blank" rel="noopener">Ubuntu for Newbies</a></p><p class="pm">Persian, with Sasan Namirian and Nava Ajdari · Narmafzar, Tehran</p></div></li>
+        <li><span class="y">2009</span><div><p class="pt">A Byte of Python</p><p class="pm">Persian translation · Narmafzar, Tehran</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== RESUME ============================== -->
+<section id="resume" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="cmd"><span class="ps-path">~/cv</span><span class="ps-dollar">$</span> git log --graph --all --date=short</p>
+      <h2>Resume</h2>
+      <p class="lede">Three branches that keep merging: <span class="lane-key work">work</span> <span class="lane-key svc">service</span> <span class="lane-key edu">education</span>. <span class="no-print"><button class="linkish" type="button" id="print-cv">lp resume.pdf</button> prints a clean copy.</span></p>
+    </div>
+
+    <ol class="gitlog">
+      <li class="c work head">
+        <span class="hash">a7c3f10</span><span class="refs">(HEAD -&gt; work)</span><span class="range">2024-04..HEAD</span>
+        <h3>Research Associate, Comparative Effectiveness</h3>
+        <p class="org">Cytel Inc. · remote</p>
+        <p>Pairwise and network meta-analyses and indirect treatment comparisons, including anchored and unanchored MAIC and STC and multilevel network meta-regression. Methods consulting for clients.</p>
+      </li>
+      <li class="c edu">
+        <span class="hash">5e19b2d</span><span class="refs">(tag: v2.0-msc)</span><span class="range">2022-09..2024-08</span>
+        <h3>MSc, Health Research Methodology</h3>
+        <p class="org">McMaster University · Hamilton</p>
+        <p>Thesis: <a href="https://hdl.handle.net/11375/30210" target="_blank" rel="noopener">Identifying an optimal strategy for converting pain as a continuous outcome to a responder analysis</a>. It became the <code>respondeR</code> package.</p>
+      </li>
+      <li class="c work">
+        <span class="hash">c40d8e1</span><span class="range">2022-10..2024-04</span>
+        <h3>Research Assistant</h3>
+        <p class="org">McMaster University · Hamilton</p>
+        <p>Led systematic reviews and network meta-analyses in pain and migraine, and methodological research on meta-analytic estimation.</p>
+      </li>
+      <li class="c work">
+        <span class="hash">91fa2c7</span><span class="range">2022-09..2024-04</span>
+        <h3>Teaching Assistant</h3>
+        <p class="org">McMaster University · Hamilton</p>
+        <p>Population and Public Health Epidemiology (PUBHLTH 701), Strategic Writing for Health Professionals (HM 732), Epidemiology (LIFESCI 3G03), Introduction to Data Science (LIFESCI 3LA3).</p>
+      </li>
+      <li class="c work">
+        <span class="hash">3b7e0a4</span><span class="range">2021-10..2022-08</span>
+        <h3>General Dental Practitioner</h3>
+        <p class="org">Kurdistan University of Medical Sciences · Seqiz</p>
+        <p>Named top community dentist in the network after coverage rose 22% and patient satisfaction rose 34%.</p>
+      </li>
+      <li class="c svc">
+        <span class="hash">d2e6c93</span><span class="refs">(svc)</span><span class="range">2021-09..HEAD</span>
+        <h3>Associate Editor</h3>
+        <p class="org">BioMed Central · BMC Oral Health, BMC Research Notes</p>
+        <p>Handled more than 15 manuscripts through to publication.</p>
+      </li>
+      <li class="c svc">
+        <span class="hash">7f0b5aa</span><span class="range">2021-05..2023-12</span>
+        <h3>Representative for the Early Career Professionals Network</h3>
+        <p class="org">Cochrane Council · global</p>
+        <p>Brought the priorities of early career researchers, especially from low and middle income countries, into Cochrane's governance.</p>
+      </li>
+      <li class="c work">
+        <span class="hash">e8a41d6</span><span class="range">2020-07..2021-09</span>
+        <h3>Research Assistant</h3>
+        <p class="org">Deputy of Research and Technology, Ministry of Health and Medical Education · Tehran</p>
+        <p>Designed and ran the oral health analysis of the PERSIAN cohort, the country's largest longitudinal dataset, to inform national policy.</p>
+      </li>
+      <li class="c svc">
+        <span class="hash">60c2f19</span><span class="range">2019-07..HEAD</span>
+        <h3>Steering Group Member and Vice-chair</h3>
+        <p class="org">Cochrane Early Career Professionals Network · global</p>
+        <p>Started Cochrane's first fully automated diversity research, mapping country, region, language, and gender across review authorship.</p>
+      </li>
+      <li class="c work">
+        <span class="hash">2ad9e70</span><span class="range">2019-06..2021-09</span>
+        <h3>Research Assistant</h3>
+        <p class="org">Non-Communicable Diseases Research Center, Tehran University of Medical Sciences</p>
+        <p>Quality of Care Index studies from the Global Burden of Disease, a national special care dentistry guideline, and the 2021 STEPS country report for Iran.</p>
+      </li>
+      <li class="c edu">
+        <span class="hash">b61e4c2</span><span class="refs">(tag: v1.0-dds)</span><span class="range">2012-09..2019-06</span>
+        <h3>Doctor of Dental Surgery</h3>
+        <p class="org">Shahid Beheshti University of Medical Sciences · Tehran</p>
+        <p>Selected Student of the University (2018). Organized TEDxSBMU and TEDMEDLive SBMU. Founded Dahaan, a knowledge translation project for dental evidence.</p>
+      </li>
+      <li class="c svc">
+        <span class="hash">f3d07b8</span><span class="range">2018-09..2021-08</span>
+        <h3>Steering Group Member and Translation Manager</h3>
+        <p class="org">Cochrane Iran · Tehran</p>
+        <p>Translated review summaries, books, news, and podcasts into Persian; ran the website and social channels.</p>
+      </li>
+      <li class="c svc root">
+        <span class="hash">0c1a9d5</span><span class="range">2018-02..2022-08</span>
+        <h3>Translator</h3>
+        <p class="org">Informed Health Choices Network · Oslo</p>
+        <p>Translated <i>The Health Choices</i> book and the That's a Claim pamphlets into Persian and Kurdish; planned a trial of critical thinking about health claims in Iranian schools.</p>
+      </li>
+    </ol>
+
+    <div class="cv-grid">
+      <div class="file">
+        <div class="file-bar">DESCRIPTION</div>
+<pre><code><span class="k">Package:</span> ahmad
+<span class="k">Title:</span> Dentist Turned Research Methodologist
+    and R Developer
+<span class="k">Version:</span> 2026.9.0
+<span class="k">Authors@R:</span> person("Ahmad", "Sofi-Mahmudi",
+    role = c("aut", "cre"),
+    comment = c(ORCID = "0000-0001-6829-0823"))
+<span class="k">Depends:</span> R (advanced), Stan
+<span class="k">Imports:</span> Python, Julia, Stata, SPSS, SAS
+<span class="k">Suggests:</span> GNU/Linux, Bash, Zsh, LaTeX,
+    Quarto, R Markdown, Git, Tableau
+<span class="k">Methods:</span> pairwise MA, NMA, cNMA, MAIC,
+    STC, ML-NMR, ML-UMR, TTE, GRADE
+<span class="k">Language:</span> ku, fa (native); en (C1);
+    fr (A2)
+<span class="k">License:</span> CC BY 4.0</code></pre>
+      </div>
+      <div class="file">
+        <div class="file-bar">NEWS.md</div>
+        <div class="news">
+          <p class="md-h"># awards</p>
+          <ul>
+            <li><b>2021</b> Lifetime Member, International Society for Evolution, Medicine &amp; Public Health</li>
+            <li><b>2019</b> Cochrane 30 Under 30</li>
+            <li><b>2017</b> First-ranked gold medalist, National Health System Management Olympiad, Iran</li>
+            <li><b>2012</b> Ranked 206th of 449,955 (top 0.05%) in Iran's national university entrance exam</li>
+            <li><b>2012</b> Ranked 57th of 10,908 (top 0.5%) in the foreign languages entrance exam</li>
+            <li><b>2010</b> Lifetime Member, Ubuntu GNU/Linux Iranian LoCo Team</li>
+          </ul>
+          <p class="md-h"># grants</p>
+          <ul>
+            <li><b>2022</b> NIMAD, Iran: Evidence Gaps in Dentistry, Phase 1 (co-investigator, USD 11,500)</li>
+            <li><b>2022</b> McMaster University Research Scholarship (CAD 19,400 per year, two years)</li>
+            <li><b>2023</b> McMaster HRM Visa Tuition Scholarship (CAD 6,000)</li>
+            <li><b>2023</b> McMaster Global Experience Award, Cochrane Colloquium London</li>
+          </ul>
         </div>
-    </header>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">About Me</h2>
-            <div class="bg-white p-8 rounded-lg shadow-md">
-                <p class="text-gray-600 leading-relaxed">
-                    I hold a Doctor of Dental Surgery (DDS) degree from Tehran University of Medical Sciences (2020) and a Master of Public Health (MPH) from King's College London (2023). My work focuses on meta-research, where I assess the transparency, reproducibility, and risk of bias in health research. I have also been actively involved in projects related to evidence-based dentistry, public health, and data science. My goal is to contribute to a more reliable and transparent research ecosystem.
-                </p>
-            </div>
-        </div>
-    </section>
+<!-- ============================== WRITING ============================== -->
+<section id="writing" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="cmd"><span class="ps-path">~</span><span class="ps-dollar">$</span> curl -s choxos.medium.com/feed | xq</p>
+      <h2>Writing</h2>
+      <p class="lede">Essays on statistics, dentistry, and how research gets made, on <a href="https://choxos.medium.com" target="_blank" rel="noopener">Medium</a>.</p>
+    </div>
+    <ol class="posts" id="post-list" aria-live="polite"></ol>
+  </div>
+</section>
 
-    <!-- Recent Work Section -->
-    <section id="recent-work" class="py-16">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Recent Work</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Research Transparency</h3>
-                        <p class="text-gray-600 mb-4">My meta-research investigates the state of transparency and reproducibility in various medical fields.</p>
-                        <a href="publications.html" class="text-blue-500 hover:underline">Learn More</a>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Evidence-Based Dentistry</h3>
-                        <p class="text-gray-600 mb-4">I contribute to synthesizing evidence to inform dental practice and policy.</p>
-                        <a href="projects.html" class="text-blue-500 hover:underline">See Projects</a>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Open Science Advocacy</h3>
-                        <p class="text-gray-600 mb-4">I am an advocate for open science and have been involved in initiatives to promote these practices.</p>
-                        <a href="blog.html" class="text-blue-500 hover:underline">Read Blog</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ============================== CONTACT ============================== -->
+<section id="contact" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="cmd"><span class="ps-path">~</span><span class="ps-dollar">$</span> finger ahmad</p>
+      <h2>Contact</h2>
+      <p class="lede">Collaborations on evidence synthesis methods, R packages, or meta-research are always welcome.</p>
+    </div>
+    <div class="contact">
+      <div class="mail">
+        <code><span class="c-prompt">$</span> mail -s "hello" <a href="mailto:a.sofimahmudi@gmail.com">a.sofimahmudi@gmail.com</a></code>
+        <button class="copy" type="button" data-copy="a.sofimahmudi@gmail.com">copy</button>
+      </div>
+      <ul class="links">
+        <li><a href="https://github.com/choxos" target="_blank" rel="me noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>github</span><em>choxos</em></a></li>
+        <li><a href="https://orcid.org/0000-0001-6829-0823" target="_blank" rel="me noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7.5" fill="none" stroke="currentColor"/><path fill="currentColor" d="M5 6.2h1.1v5H5zM5.55 4.2a.65.65 0 110 1.3.65.65 0 010-1.3zM7.2 6.2h2c1.6 0 2.6 1 2.6 2.5s-1 2.5-2.6 2.5h-2zm1.1 1v3h.9c1 0 1.5-.6 1.5-1.5s-.5-1.5-1.5-1.5z"/></svg><span>orcid</span><em>0000-0001-6829-0823</em></a></li>
+        <li><a href="https://scholar.google.com/citations?user=gTWPaFYAAAAJ" target="_blank" rel="me noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 1L0 6.5l3 2V12c0 1.7 2.2 3 5 3s5-1.3 5-3V8.5l1.5-1V12h1V6.5zm0 1.2l6.2 4.3L8 10.8 1.8 6.5zM4 9.2l4 2.8 4-2.8V12c0 1-1.7 2-4 2s-4-1-4-2z"/></svg><span>scholar</span><em>gTWPaFYAAAAJ</em></a></li>
+        <li><a href="https://www.linkedin.com/in/asofimahmudi/" target="_blank" rel="me noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M0 1.15C0 .52.52 0 1.17 0h13.66C15.48 0 16 .52 16 1.15v13.7c0 .63-.52 1.15-1.17 1.15H1.17C.52 16 0 15.48 0 14.85zm4.95 12.24V6.17H2.55v7.22zM3.75 5.18c.84 0 1.36-.55 1.36-1.25-.02-.71-.52-1.25-1.35-1.25-.82 0-1.36.54-1.36 1.25 0 .7.52 1.25 1.33 1.25zm4.9 8.21V9.36c0-.22.02-.43.08-.58.17-.43.57-.88 1.23-.88.87 0 1.21.66 1.21 1.63v3.86h2.4V9.25c0-2.22-1.18-3.25-2.76-3.25-1.27 0-1.84.7-2.16 1.19v.02h-.01l.01-.02V6.17h-2.4c.03.68 0 7.22 0 7.22z"/></svg><span>linkedin</span><em>asofimahmudi</em></a></li>
+        <li><a href="https://twitter.com/asofimahmudi" target="_blank" rel="me noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M12.6.75h2.45L9.7 6.87 16 15.25h-4.93l-3.86-5.05-4.42 5.05H.34l5.73-6.55L0 .75h5.06l3.49 4.62zm-.86 13.03h1.36L4.32 2.15H2.86z"/></svg><span>x</span><em>@asofimahmudi</em></a></li>
+        <li><a href="https://choxos.medium.com" target="_blank" rel="me noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><ellipse cx="4.5" cy="8" rx="4.5" ry="4.5" fill="currentColor"/><ellipse cx="11.6" cy="8" rx="2.2" ry="4.3" fill="currentColor"/><ellipse cx="15.1" cy="8" rx=".8" ry="3.9" fill="currentColor"/></svg><span>medium</span><em>choxos</em></a></li>
+        <li><a href="https://cran.r-project.org/web/checks/check_results_a.sofimahmudi_at_gmail.com.html" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M8 2C3.6 2 0 4.2 0 7c0 2.4 2.6 4.4 6.2 4.9V14h2.4v-2h1.8l1.4 2H15l-1.8-2.6C15 10.5 16 9 16 7c0-2.8-3.6-5-8-5zm0 1.6c3.3 0 6 1.5 6 3.4 0 1.2-1 2.2-2.6 2.8-.3-.6-.9-1-1.6-1H6.2v1.6C3.8 10 2 8.6 2 7c0-1.9 2.7-3.4 6-3.4zm.6 5.9h1.1c.4 0 .6.2.6.5s-.2.5-.6.5H8.6z"/></svg><span>cran</span><em>7 packages</em></a></li>
+        <li><a href="https://openalex.org/A5075399321" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="4" cy="4" r="2" fill="currentColor"/><circle cx="12" cy="5" r="2" fill="currentColor"/><circle cx="7" cy="12" r="2" fill="currentColor"/><path d="M4 4l8 1-5 7z" stroke="currentColor" fill="none"/></svg><span>openalex</span><em>A5075399321</em></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-12">
-        <div class="container mx-auto px-6 text-center">
-            <div class="mb-6">
-                <a href="https://www.linkedin.com/in/asofimahmudi" target="_blank" class="text-gray-400 hover:text-white mx-4 text-2xl"><i class="fab fa-linkedin"></i></a>
-                <a href="https://scholar.google.com/citations?user=gTWPaFYAAAAJ" target="_blank" class="text-gray-400 hover:text-white mx-4 text-2xl"><i class="fas fa-graduation-cap"></i></a>
-                <a href="https://github.com/choxos" target="_blank" class="text-gray-400 hover:text-white mx-4 text-2xl"><i class="fab fa-github"></i></a>
-                <a href="https://twitter.com/AhmadSofiMahmudi" target="_blank" class="text-gray-400 hover:text-white mx-4 text-2xl"><i class="fab fa-twitter"></i></a>
-            </div>
-            <p>&copy; 2025 Ahmad Sofi-Mahmudi. All Rights Reserved.</p>
-        </div>
-    </footer>
+<footer class="foot">
+  <div class="wrap">
+    <p><span class="muted">#</span> Hand-written HTML, CSS, and vanilla JS. No frameworks, no analytics, no cookies.</p>
+    <p><span class="muted">#</span> Data refreshed <span data-stat="updated">2026-09-18</span> by <a href="https://github.com/choxos/choxos.github.io/blob/main/update_data.py" target="_blank" rel="noopener">update_data.py</a> from OpenAlex, GitHub, CRAN, and Medium.</p>
+    <p><span class="muted">#</span> © 2026 Ahmad Sofi-Mahmudi · <a href="https://github.com/choxos/choxos.github.io" target="_blank" rel="noopener">view source</a></p>
+  </div>
+</footer>
 
-    <script>
-        document.getElementById('nav-toggle').addEventListener('click', function() {
-            var menu = document.getElementById('nav-menu');
-            menu.classList.toggle('hidden');
-        });
-    </script>
+<!-- tmux-style status bar navigation -->
+<nav class="tmux" aria-label="Sections">
+  <span class="tmux-session">[choxos]</span>
+  <ol class="tmux-wins" id="tmux-wins">
+    <li><a href="#top" data-win="top">0:~</a></li>
+    <li><a href="#about" data-win="about">1:about</a></li>
+    <li><a href="#packages" data-win="packages">2:packages</a></li>
+    <li><a href="#playground" data-win="playground">3:playground</a></li>
+    <li><a href="#projects" data-win="projects">4:repos</a></li>
+    <li><a href="#papers" data-win="papers">5:papers</a></li>
+    <li><a href="#resume" data-win="resume">6:resume</a></li>
+    <li><a href="#writing" data-win="writing">7:writing</a></li>
+    <li><a href="#contact" data-win="contact">8:contact</a></li>
+  </ol>
+  <span class="tmux-right">
+    <button type="button" id="open-term" title="Open terminal (`)">&gt;_</button>
+    <button type="button" id="theme-toggle" title="Toggle light and dark">theme</button>
+    <span class="clock" id="clock" title="Toronto time">--:--</span>
+  </span>
+</nav>
 
+<!-- Drop-down terminal -->
+<div class="term" id="term" role="dialog" aria-modal="true" aria-label="Terminal" hidden>
+  <div class="term-inner">
+    <div class="term-bar"><span>choxos@github.io: ~ (bash)</span><button type="button" id="term-close" aria-label="Close terminal">×</button></div>
+    <div class="term-out" id="term-out" aria-live="polite"></div>
+    <form class="term-line" id="term-form" autocomplete="off">
+      <label for="term-in"><span class="ps1">ahmad@choxos</span>:<span class="ps-path" id="term-cwd">~</span>$</label>
+      <input id="term-in" type="text" spellcheck="false" autocapitalize="off" autocomplete="off">
+    </form>
+  </div>
+</div>
+
+<!-- Keyboard help -->
+<div class="keys" id="keys" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts" hidden>
+  <div class="keys-inner">
+    <p class="md-h"># keybindings</p>
+    <dl>
+      <div><dt><kbd>`</kbd></dt><dd>open the terminal</dd></div>
+      <div><dt><kbd>1</kbd>…<kbd>8</kbd></dt><dd>jump to a section</dd></div>
+      <div><dt><kbd>0</kbd></dt><dd>back to top</dd></div>
+      <div><dt><kbd>/</kbd></dt><dd>grep the publications</dd></div>
+      <div><dt><kbd>t</kbd></dt><dd>toggle theme</dd></div>
+      <div><dt><kbd>Esc</kbd></dt><dd>close this</dd></div>
+    </dl>
+  </div>
+</div>
+
+<script src="js/main.js" defer></script>
 </body>
-</html> 
+</html>

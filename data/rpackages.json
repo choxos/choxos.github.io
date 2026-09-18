@@ -1,0 +1,101 @@
+[
+ {
+  "name": "mlumr",
+  "cran": true,
+  "version": "0.1.0",
+  "title": "Multilevel Unanchored Meta-Regression for Indirect Treatment Comparisons",
+  "published": "2026-05-20",
+  "downloads": 1547,
+  "cran_url": "https://cran.r-project.org/package=mlumr",
+  "repo": "https://github.com/choxos/mlumr",
+  "site": "https://choxos.github.io/mlumr/"
+ },
+ {
+  "name": "respondeR",
+  "cran": true,
+  "version": "0.1.0",
+  "title": "Imputing Responder Proportions from Continuous Outcomes",
+  "published": "2026-06-19",
+  "downloads": 801,
+  "cran_url": "https://cran.r-project.org/package=respondeR",
+  "repo": "https://github.com/choxos/respondeR",
+  "site": "https://choxos.github.io/respondeR/"
+ },
+ {
+  "name": "krt",
+  "cran": true,
+  "version": "0.1.0",
+  "title": "Author, Validate, and Export Key Resources Tables",
+  "published": "2026-09-12",
+  "downloads": 57,
+  "cran_url": "https://cran.r-project.org/package=krt",
+  "repo": "https://github.com/choxos/krt",
+  "site": "https://choxos.github.io/krt/"
+ },
+ {
+  "name": "retraction",
+  "cran": true,
+  "version": "0.1.0",
+  "title": "Detect Retracted References in Documents and Bibliographies",
+  "published": "2026-07-10",
+  "downloads": 632,
+  "cran_url": "https://cran.r-project.org/package=retraction",
+  "repo": null,
+  "site": "https://choxos.github.io/retraction/"
+ },
+ {
+  "name": "rfair",
+  "cran": true,
+  "version": "0.1.0",
+  "title": "Assess the FAIRness of Research Data Objects and Software",
+  "published": "2026-07-01",
+  "downloads": 585,
+  "cran_url": "https://cran.r-project.org/package=rfair",
+  "repo": "https://github.com/choxos/rfair",
+  "site": "https://choxos.github.io/rfair/"
+ },
+ {
+  "name": "rtransparency",
+  "cran": true,
+  "version": "1.0.0",
+  "title": "Identifies Indicators of Transparency",
+  "published": "2026-07-01",
+  "downloads": 524,
+  "cran_url": "https://cran.r-project.org/package=rtransparency",
+  "repo": "https://github.com/choxos/rtransparency",
+  "site": "https://choxos.github.io/rtransparency/"
+ },
+ {
+  "name": "sysreqr",
+  "cran": true,
+  "version": "0.1.0",
+  "title": "Preflight Checks for 'R' Package System Requirements",
+  "published": "2026-06-11",
+  "downloads": 563,
+  "cran_url": "https://cran.r-project.org/package=sysreqr",
+  "repo": "https://github.com/choxos/sysreqR",
+  "site": "https://choxos.github.io/sysreqR/"
+ },
+ {
+  "name": "cpaic",
+  "cran": false,
+  "version": "0.1.0",
+  "title": "Component-Based Population-Adjusted Indirect Comparison",
+  "published": null,
+  "downloads": null,
+  "cran_url": null,
+  "repo": "https://github.com/choxos/cpaic",
+  "site": "https://choxos.github.io/cpaic/"
+ },
+ {
+  "name": "ggextreme",
+  "cran": false,
+  "version": "0.1.0",
+  "title": "Animated Bar Chart Races and Other Presentation Charts",
+  "published": null,
+  "downloads": null,
+  "cran_url": null,
+  "repo": "https://github.com/choxos/ggextreme",
+  "site": "https://choxos.github.io/ggextreme/"
+ }
+]

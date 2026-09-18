@@ -1,0 +1,55 @@
+{
+ "updated": "2026-09-18",
+ "citations": 5225,
+ "h_index": 18,
+ "i10_index": 23,
+ "works": 69,
+ "first_author": 27,
+ "by_year": [
+  {
+   "year": 2018,
+   "cites": 0,
+   "works": 1
+  },
+  {
+   "year": 2019,
+   "cites": 1,
+   "works": 5
+  },
+  {
+   "year": 2020,
+   "cites": 709,
+   "works": 20
+  },
+  {
+   "year": 2021,
+   "cites": 2565,
+   "works": 16
+  },
+  {
+   "year": 2022,
+   "cites": 1737,
+   "works": 16
+  },
+  {
+   "year": 2023,
+   "cites": 52,
+   "works": 11
+  },
+  {
+   "year": 2024,
+   "cites": 145,
+   "works": 21
+  },
+  {
+   "year": 2025,
+   "cites": 16,
+   "works": 7
+  },
+  {
+   "year": 2026,
+   "cites": 0,
+   "works": 14
+  }
+ ]
+}
