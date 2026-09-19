@@ -38,7 +38,7 @@
         cell(row, Math.round(p.p_positive * 100) + "%", "num");
         const badge = document.createElement("span");
         badge.className = "badge " + (tone(p) === "neutral" ? "" : p.direction);
-        badge.textContent = p.evidence;
+        badge.textContent = p.evidence === "confirmatory" ? "judged at 6 and 12 months" : p.evidence;
         cell(row, "").appendChild(badge);
         body.appendChild(row);
       }
@@ -59,7 +59,7 @@
     const phi = r.dynamics.phi, sigma = r.dynamics.sigma_day;
     document.getElementById("dynamics").textContent =
       `Carry-over of mood from one day to the next (φ) is ${phi.est.toFixed(2)} (95% interval ${phi.lo.toFixed(2)} to ${phi.hi.toFixed(2)}); ` +
-      `0 would mean every day starts fresh, 1 that moods linger indefinitely. The day-to-day swing on the logit scale (σ) is ` +
+      `0 would mean every day starts fresh, 1 that moods linger indefinitely, and a negative value that a good day tends to be followed by a worse one. The day-to-day swing on the logit scale (σ) is ` +
       `${sigma.est.toFixed(2)} (${sigma.lo.toFixed(2)} to ${sigma.hi.toFixed(2)}).`;
   }
 

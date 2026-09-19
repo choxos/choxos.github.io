@@ -160,6 +160,27 @@ td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-sp
 .tooltip .key.neg { background: var(--neg); }
 details > summary { cursor: pointer; color: var(--text-2); }
 
+/* Long documents on the public site: the protocol and its review record. */
+.doc { max-width: 780px; line-height: 1.6; }
+.doc h1 { font-size: 1.6rem; line-height: 1.3; margin-bottom: 1rem; }
+.doc h2 { font-size: 1.25rem; margin: 2.25rem 0 0.75rem; }
+.doc h3 { font-size: 1.05rem; margin: 1.75rem 0 0.5rem; }
+.doc h4 { font-size: 0.95rem; margin: 1.25rem 0 0.5rem; }
+.doc ol, .doc ul { padding-left: 1.4rem; margin: 0 0 0.75rem; }
+.doc li { margin-bottom: 0.3rem; }
+.doc table { display: block; overflow-x: auto; margin: 0 0 1rem; font-size: 0.85rem; line-height: 1.45; }
+.doc math[display="block"] { margin: 1rem 0; overflow-x: auto; }
+.doc code { font-size: 0.9em; overflow-wrap: anywhere; }
+.doc .toc { border: 1px solid var(--border); border-radius: var(--radius); padding: 0.75rem 1rem; margin: 1rem 0 1.5rem; font-size: 0.9rem; }
+.doc .toc ul { list-style: none; padding-left: 1rem; margin: 0; }
+.doc .toc > ul { padding-left: 0; }
+.doc h2#references ~ p { padding-left: 1.5rem; text-indent: -1.5rem; font-size: 0.9rem; }
+.doc .review { margin: 1rem 0; }
+.doc .review h3 { margin-top: 0; }
+.doc .points li { margin-bottom: 0.6rem; }
+.doc .response { border-left: 3px solid var(--border); padding-left: 1rem; }
+.doc .prompt { white-space: pre-wrap; font-size: 0.8rem; background: var(--surface); padding: 0.75rem; border-radius: var(--radius); }
+
 @media (max-width: 560px) {
   .mood { padding: 1.4rem 0.25rem; }
   .mood .face { font-size: 3rem; }
