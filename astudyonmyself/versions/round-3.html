@@ -3,21 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Protocol of an N-of-1 Bayesian study of momentary mood and daily satisfaction.">
-  <title>Study protocol · A Study On Myself</title>
-  <link rel="stylesheet" href="app.css">
+  <meta name="description" content="The version of the study protocol the reviewers received in round 3.">
+  <title>Protocol as reviewed in round 3 · A Study On Myself</title>
+  <link rel="stylesheet" href="../app.css">
 </head>
 <body>
   <nav class="nav">
-    <a class="brand" href="./">A Study On Myself</a>
-    <a href="./">Results</a>
-    <a href="protocol.html" aria-current="page">Protocol</a>
-    <a href="review.html">Review record</a>
+    <a class="brand" href=".././">A Study On Myself</a>
+    <a href=".././">Results</a>
+    <a href="../protocol.html">Protocol</a>
+    <a href="../review.html">Review record</a>
   </nav>
   <main class="doc">
-<p class="small muted">Protocol version 3.0, draft for review (round 4). SHA-256 of
-  <a href="study_protocol.md">study_protocol.md</a>: <code class="hash">d09ecd1a9f488a2ed61a12589f2f24ff2a99c023023765d31180d57a59a43148</code>.
-  How it was reviewed: <a href="review.html">review record</a>.</p>
+<p class="small muted">This is the version the reviewers received in round 3, kept for the record.
+  The current protocol is <a href="../protocol.html">here</a>; the reports are in the <a href="../review.html#round-3">review record</a>.</p>
 <nav class="toc" aria-label="Contents">
 <ul>
 <li><a
@@ -117,7 +116,7 @@ and Daily Satisfaction</h1>
 <tbody>
 <tr>
 <td>Protocol version</td>
-<td>3.0, draft for review (round 4)</td>
+<td>3.0, draft for review (round 3)</td>
 </tr>
 <tr>
 <td>Date</td>
@@ -1103,44 +1102,14 @@ accuracy. A posterior predictive check fails when the observed statistic
 lies outside the central 95% of the replicated ones; the dashboard marks
 each failed category share at every fit, and failures are reported. At 6
 and 12 months, the proportional odds assumption is checked for each
-confirmatory factor
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
-with a diagnostic variant of the model, which is not a change to the
-primary model (ordinal-ar1-stan-v4). The variant keeps the primary
-model’s likelihood, priors and imputation, except that factor
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
-has one coefficient per threshold:</p>
-<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Pr</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>≤</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mrow><mi mathvariant="normal">logit</mi><mo>&#8289;</mo></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>c</mi><mi>k</mi></msub><mo>−</mo><msubsup><mi>η</mi><mi>i</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>j</mi><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><mo>−</mo><msub><mi>β</mi><mrow><mi>j</mi><mi>k</mi></mrow></msub><msub><mi>x</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><mi>k</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\Pr(y_i \le k) = \operatorname{logit}^{-1}\left(c_k - \eta_i^{(-j)} - \beta_{jk} x_{ij}\right), \quad k = 1, 2</annotation></semantics></math></p>
-<p>where
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k = 1</annotation></semantics></math>
-separates Sad from Meh or Happy and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">k = 2</annotation></semantics></math>
-separates Sad or Meh from Happy,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>η</mi><mi>i</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>j</mi><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><annotation encoding="application/x-tex">\eta_i^{(-j)}</annotation></semantics></math>
-is the primary linear predictor without factor
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>,
-and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">x_{ij}</annotation></semantics></math>
-is the factor’s observed or imputed value.
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>β</mi><mrow><mi>j</mi><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">\beta_{j1}</annotation></semantics></math>
-and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>β</mi><mrow><mi>j</mi><mn>2</mn></mrow></msub><annotation encoding="application/x-tex">\beta_{j2}</annotation></semantics></math>
-each have the factor’s normal(0, 0.5) prior. The two cumulative
-probabilities are ordered only if
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>−</mo><msub><mi>β</mi><mrow><mi>j</mi><mn>1</mn></mrow></msub><msub><mi>x</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>&lt;</mo><msub><mi>c</mi><mn>2</mn></msub><mo>−</mo><msub><mi>β</mi><mrow><mi>j</mi><mn>2</mn></mrow></msub><msub><mi>x</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">c_1 - \beta_{j1} x_{ij} &lt; c_2 - \beta_{j2} x_{ij}</annotation></semantics></math>
-for every report, so the variant gives zero posterior density to
-parameter values that break this for any report, with observed and
-imputed values alike; this truncates the prior to the region where the
-model is valid. The assumption fails for factor
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
-if the 95% interval of
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>β</mi><mrow><mi>j</mi><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>β</mi><mrow><mi>j</mi><mn>2</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\beta_{j1} - \beta_{j2}</annotation></semantics></math>
-excludes zero; a factor that fails is reported with both coefficients
-next to its confirmatory result, which is not changed. The variant’s
-Stan file (model version ordinal-ar1-ppo-check-v1), which implements
-exactly this specification, is added to the published software before
-the 6-month analysis. Other extensions that address a failed check, such
-as category-specific effects for all factors, are exploratory.</p>
+confirmatory factor: the model is refitted with separate coefficients of
+that factor for its two thresholds (Sad against Meh or Happy, and Sad or
+Meh against Happy), and the assumption fails for that factor if the 95%
+interval of the difference between the two coefficients excludes zero. A
+factor that fails is reported with both coefficients next to its
+confirmatory result, which is not changed; other extensions that address
+a failed check, such as category-specific effects for all factors, are
+exploratory.</p>
 <p>The software’s tests include slow tests, run on request, that fit
 both models to simulated data with a known effect and check that the
 effect is found without divergent transitions;
@@ -1252,21 +1221,18 @@ reveal a period of low mood. Safety rule: if more than half of the
 reports in the last 14 study days are Sad (with at least 10 reports in
 that period), or the evening rating is 3 or lower on at least 7 of the
 last 14 days, the app shows a notice on its home page and on the rating
-page that reminders open, and the participant will contact a family
-physician or a mental health professional; in a crisis, the participant
-will call a crisis line (988 in Canada and the United States) or
-emergency services. The app evaluates the rule when either page loads,
-after every report the page sends (including reports sent later from the
-phone’s queue), and when an open page returns to the screen or
-reconnects; reports sent by a phone automation are covered the next time
-the app is used. The study is always secondary to health and care: care
-is never delayed or withheld for the study’s sake. Data collection can
-be paused at any time; a pause is recorded as a dated note, its days are
-missing data, and collection resumes when the participant decides.
-Experiments use only everyday, low-risk changes and never medication; an
-experiment stops early if the intervention causes distress or harm, such
-as persistent caffeine withdrawal headaches, or if the safety rule is
-met.</p>
+page that reminders open, checked every time either page is opened, so
+at every report made in the app, and the participant will contact a
+family physician or a mental health professional; in a crisis, the
+participant will call a crisis line (988 in Canada and the United
+States) or emergency services. The study is always secondary to health
+and care: care is never delayed or withheld for the study’s sake. Data
+collection can be paused at any time; a pause is recorded as a dated
+note, its days are missing data, and collection resumes when the
+participant decides. Experiments use only everyday, low-risk changes and
+never medication; an experiment stops early if the intervention causes
+distress or harm, such as persistent caffeine withdrawal headaches, or
+if the safety rule is met.</p>
 <p>Stopping: the participant can stop the study at any time. If it stops
 before 12 months, the confirmatory analysis is run on the data available
 and reported as an early stop, with its date and reason.</p>
