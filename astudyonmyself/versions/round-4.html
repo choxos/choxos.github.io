@@ -3,21 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Protocol of an N-of-1 Bayesian study of momentary mood and daily satisfaction.">
-  <title>Study protocol · A Study On Myself</title>
-  <link rel="stylesheet" href="app.css">
+  <meta name="description" content="The version of the study protocol the reviewers received in round 4.">
+  <title>Protocol as reviewed in round 4 · A Study On Myself</title>
+  <link rel="stylesheet" href="../app.css">
 </head>
 <body>
   <nav class="nav">
-    <a class="brand" href="./">A Study On Myself</a>
-    <a href="./">Results</a>
-    <a href="protocol.html" aria-current="page">Protocol</a>
-    <a href="review.html">Review record</a>
+    <a class="brand" href=".././">A Study On Myself</a>
+    <a href=".././">Results</a>
+    <a href="../protocol.html">Protocol</a>
+    <a href="../review.html">Review record</a>
   </nav>
   <main class="doc">
-<p class="small muted">Protocol version 3.0, final. SHA-256 of
-  <a href="study_protocol.md">study_protocol.md</a>: <code class="hash">e8ef77bffa8d2292da3e902e0c83c7682155b85e1c5ae520679e17b5a5f351dc</code>.
-  How it was reviewed: <a href="review.html">review record</a>.</p>
+<p class="small muted">This is the version the reviewers received in round 4, kept for the record.
+  The current protocol is <a href="../protocol.html">here</a>; the reports are in the <a href="../review.html#round-4">review record</a>.</p>
 <nav class="toc" aria-label="Contents">
 <ul>
 <li><a
@@ -117,7 +116,7 @@ and Daily Satisfaction</h1>
 <tbody>
 <tr>
 <td>Protocol version</td>
-<td>3.0, final</td>
+<td>3.0, draft for review (round 4)</td>
 </tr>
 <tr>
 <td>Date</td>
@@ -132,10 +131,10 @@ class="uri">https://choxos.github.io</a></td>
 </tr>
 <tr>
 <td>Status</td>
-<td>Finalized on 19 September 2026. The pilot ran on 19 September 2026
-(Section 2.12). Confirmatory data collection starts on 20 September
-2026, the day after finalization; that date is recorded in the software
-as the study start, and reports made before it never enter a model.</td>
+<td>A pilot started on 19 September 2026 (Section 2.12). Confirmatory
+data collection starts on the day after this protocol is finalized; that
+date is recorded here and in the software as the study start, and
+reports made before it never enter a model.</td>
 </tr>
 <tr>
 <td>Registration</td>
@@ -166,7 +165,7 @@ committee, data monitoring committee or other oversight group (Section
 <tr>
 <td>Use of AI tools</td>
 <td>AI tools helped write the study software and revise this protocol.
-Two AI models reviewed the protocol; their reports and the responses are
+Two AI models review the protocol; their reports and the responses are
 published with it (Section 3.4).</td>
 </tr>
 </tbody>
@@ -222,8 +221,8 @@ excluded from every model (model version ordinal-ar1-stan-v4); reminders
 sent as push notifications; the day satisfaction model specified and
 implemented; a prior predictive check and a design analysis added;
 weekly adherence, a safety rule, monitoring, privacy boundaries and
-ethics clarified; reviewed by two AI models in four rounds and finalized
-on 19 September 2026 (Section 3.4).</td>
+ethics clarified; submitted for review by two AI models (Section
+3.4).</td>
 </tr>
 </tbody>
 </table>
@@ -1135,14 +1134,12 @@ model is valid. The assumption fails for factor
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
 if the 95% interval of
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>β</mi><mrow><mi>j</mi><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>β</mi><mrow><mi>j</mi><mn>2</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\beta_{j1} - \beta_{j2}</annotation></semantics></math>
-excludes zero; a factor that fails is reported with both
-threshold-specific effects, as odds ratios per natural unit with 95%
-intervals like its confirmatory result, next to that result, which is
-not changed. The variant’s Stan file (model version
-ordinal-ar1-ppo-check-v1), which implements exactly this specification,
-is added to the published software before the 6-month analysis. Other
-extensions that address a failed check, such as category-specific
-effects for all factors, are exploratory.</p>
+excludes zero; a factor that fails is reported with both coefficients
+next to its confirmatory result, which is not changed. The variant’s
+Stan file (model version ordinal-ar1-ppo-check-v1), which implements
+exactly this specification, is added to the published software before
+the 6-month analysis. Other extensions that address a failed check, such
+as category-specific effects for all factors, are exploratory.</p>
 <p>The software’s tests include slow tests, run on request, that fit
 both models to simulated data with a known effect and check that the
 effect is found without divergent transitions;
@@ -1276,10 +1273,10 @@ and reported as an early stop, with its date and reason.</p>
 <p>Phase 1, infrastructure (September 2026): the software described in
 Sections 2.7 and 2.8, with automated tests, a prior predictive check and
 a design analysis.</p>
-<p>Phase 2, pilot (19 September 2026, the day before the study start):
-checks of the reminders, the automatic data flows, the backups and the
-evening log. Pilot reports test the software and never enter a model;
-the software fits no model at all until the study start is set.</p>
+<p>Phase 2, pilot (from 19 September 2026 to the study start): checks of
+the reminders, the automatic data flows, the backups and the evening
+log. Pilot reports test the software and never enter a model; the
+software fits no model at all until the study start is set.</p>
 <p>Phase 3, data collection (months 1 to 12 from the study start), with
 the interim analysis at 6 months and a monthly review.</p>
 <p>Phase 4, final analysis at 12 months, with the secondary and
@@ -1368,28 +1365,20 @@ dictionary is Appendix A. The study software, including the Stan models,
 the R analysis code, the design analysis and the review scripts, is
 published under the GNU General Public License 3.0 at <a
 href="https://github.com/choxos/AStudyOnMyself"
-class="uri">https://github.com/choxos/AStudyOnMyself</a>; every
-published estimate carries its model version.</p>
+class="uri">https://github.com/choxos/AStudyOnMyself</a> when this
+protocol is finalized; every published estimate carries its model
+version.</p>
 <h3 id="protocol-amendments-and-review">3.4 Protocol Amendments and
 Review</h3>
 <p>Any change to the outcomes, factors, data sources, model, hypotheses
 or decision rules gets a new protocol version, with its date, the change
 and the reason in the revision history, published before the change
 takes effect in the analysis; model changes also get a new model version
-string. Version 3.0 was reviewed by two AI models, GPT-6-Astra (OpenAI,
-through the Codex command line tool) and Grok 4.6 (xAI, through the Grok
-command line tool), in four rounds. Grok 4.6 accepted it from the second
-round on. GPT-6-Astra’s fourth report asked for one more change, to the
-order in which the rating page applies the server’s answers about the
-safety rule (Section 2.11); the change was made and tested, and the
-participant then finalized the protocol without a fifth round. Their
+string. Version 3.0 is being reviewed by two AI models, GPT-6-Astra
+(OpenAI, through the Codex command line tool) and Grok 4.6 (xAI, through
+the Grok command line tool), in rounds until both are satisfied. Their
 reports, the responses and each reviewed version are published with the
-protocol. After the fourth round, the protocol text changed only in the
-administrative information, the revision history, the pilot dates in
-Section 2.12, the tense of Sections 3.3 and 3.4, and one clarification
-that the last Grok 4.6 report asked for: the scale on which the
-proportional odds check is reported (Section 2.9.8). Review by AI models
-is not peer review by human experts.</p>
+protocol. Review by AI models is not peer review by human experts.</p>
 <h2 id="discussion">4. Discussion</h2>
 <h3 id="strengths">4.1 Strengths</h3>
 <p>Outcomes, factors, timing rules, the model, the hypotheses and the

@@ -16,8 +16,8 @@
   </nav>
   <main class="doc">
 <h1 id="review-record">Review record</h1>
-<p>Version 3.0 of the protocol of A Study On Myself is reviewed by two
-AI models before it is finalized: GPT-6-Astra (OpenAI), run through the
+<p>Version 3.0 of the protocol of A Study On Myself was reviewed by two
+AI models before it was finalized: GPT-6-Astra (OpenAI), run through the
 Codex command line tool, and Grok 4.6 (xAI), run through the Grok
 command line tool, both at reasoning effort xhigh. <strong>This is
 review by AI models, not peer review by human experts.</strong></p>
@@ -38,14 +38,25 @@ no must-fix point remains.</li>
 the protocol. From round 2 on, each reviewer received its own previous
 report, the response to it, the changes to the protocol and a fresh copy
 of the software, and marked each earlier point as resolved or not.</li>
-<li>Rounds continue until both reviewers accept; the protocol is then
-finalized.</li>
+<li>The review ran for four rounds. Grok 4.6 accepted the protocol from
+round 2 on. GPT-6-Astra’s round 4 report left one must-fix point, the
+order in which the rating page applies the server’s answers about the
+safety rule; it was fixed and tested, and the participant finalized the
+protocol on 19 September 2026 without a fifth round. After round 4, the
+protocol text changed only in the administrative information, the
+revision history, the pilot dates, the tense of the review section and
+one clarification that the last Grok 4.6 report asked for.</li>
 <li>The reports are shown as the reviewers returned them, in structured
 form; only the layout is added here. Each version the reviewers received
 is linked from the table below, and the scripts that ran the review
-(<code>peer-review/run-review.sh</code> and
-<code>peer-review/snapshot.sh</code>) are kept with the study
-software.</li>
+(<code>peer-review/run-review.sh</code>,
+<code>peer-review/snapshot.sh</code> and
+<code>peer-review/extract.ts</code>) are kept with the study software.
+The Codex event logs in <code>peer-review/</code> are kept as recorded,
+except that <code>extract.ts</code> replaces paths in the home folder
+with <code>~</code> and leaves out the output of commands that read
+files outside the review workspace, such as the reviewer tool’s own
+settings and plugins.</li>
 </ul>
 
 <div class="table-wrap"><table>
@@ -53,6 +64,7 @@ software.</li>
 <tbody><tr><td><a href="#round-1">Round 1</a></td><td><a href="versions/round-1.html">Version reviewed</a></td>
 <td>Revise</td><td>Revise</td></tr><tr><td><a href="#round-2">Round 2</a></td><td><a href="versions/round-2.html">Version reviewed</a></td>
 <td>Revise</td><td>Accept</td></tr><tr><td><a href="#round-3">Round 3</a></td><td><a href="versions/round-3.html">Version reviewed</a></td>
+<td>Revise</td><td>Accept</td></tr><tr><td><a href="#round-4">Round 4</a></td><td><a href="versions/round-4.html">Version reviewed</a></td>
 <td>Revise</td><td>Accept</td></tr></tbody>
 </table></div>
 <h2 id="round-1">Round 1</h2>
@@ -735,6 +747,69 @@ is now updated after every report the app sends and when an open page
 returns to the screen. Second, a fit is published only if it used the
 study start set at the moment of publication, and tag comparisons are
 shown only from a run under the current study start.</p>
+</div>
+</section><h2 id="round-4">Round 4</h2>
+<section class="card review" id="round-4-gpt-6-astra">
+<h3>GPT-6-Astra: Revise</h3>
+<p class="small muted">OpenAI GPT-6-Astra through the Codex command line tool (codex-cli 0.155.1), reasoning effort xhigh; September 19, 2026.</p>
+<p><strong>Summary.</strong> One blocking safety-display race remains. Cutoff handling, diagnostic specification, and adherence tests are resolved. Findings use source inspection, saved-result recalculation, and in-memory probes; full application tests, browser testing, and new Stan fits were not run.</p>
+<h4>Points from the previous round</h4>
+<div class="table-wrap"><table><thead><tr><th>Point</th><th>Status</th><th>Comment</th></tr></thead><tbody>
+<tr><td>M1</td><td>Resolved</td><td>Pilot and confirmatory collection remain clearly separated, with cutoff enforcement corrected.</td></tr><tr><td>M2</td><td>Resolved</td><td>Whole-day weather and evening context remain explicit contemporaneous adjustment exceptions.</td></tr><tr><td>M3</td><td>Resolved</td><td>Weather collection stops at yesterday in the participant&#39;s time zone.</td></tr><tr><td>M4</td><td>Resolved</td><td>Potential bias in average mood and associations from outcome-dependent nonresponse remains acknowledged.</td></tr><tr><td>M5</td><td>Resolved</td><td>Binary contrasts replace observed or imputed contributions with predictions at yes and no.</td></tr><tr><td>M6</td><td>Resolved</td><td>Convergence requirements, private warnings, confirmatory reruns, and publication gating remain implemented or specified.</td></tr><tr><td>M7</td><td>Resolved</td><td>Evidence categories are computed before probabilities are rounded.</td></tr><tr><td>M8</td><td>Resolved</td><td>Simulated outcomes use rounded covariates, and true effects use each replicate&#39;s fitted standard deviations.</td></tr><tr><td>M9</td><td>Resolved</td><td>Both opt-in recovery tests check effect detection and divergent transitions; they were not rerun.</td></tr><tr><td>M10</td><td>Resolved</td><td>Evening forms save edited fields only, preserving intervening automatic updates.</td></tr><tr><td>M11</td><td>Resolved</td><td>Device submissions retain acknowledgment-only responses, including duplicate reports.</td></tr><tr><td>M12</td><td>Resolved</td><td>Nested publication fields remain explicitly constructed and covered by the adversarial-field test.</td></tr><tr><td>M13</td><td>Resolved</td><td>Backup retention and push-service metadata disclosures remain accurate.</td></tr><tr><td>M14</td><td>Resolved</td><td>Both adherence measures count begun slots; fixed-time probes confirmed their denominators.</td></tr><tr><td>M15</td><td>Resolved</td><td>Private-study ethics rationale and prospective reassessment remain explicit.</td></tr><tr><td>M16</td><td>Resolved</td><td>Previously corrected expressed-mood rhythm statement and citation remain unchanged.</td></tr><tr><td>S1</td><td>Resolved</td><td>Other screen time and social media have distinct estimands, with fallback analyses specified.</td></tr><tr><td>S2</td><td>Resolved</td><td>Independent-imputation limitations and temporally informed, type-appropriate sensitivity analysis remain specified.</td></tr><tr><td>S3</td><td>Resolved</td><td>Slot restriction, informative-nonresponse sensitivity, and reminder-response definition remain explicit.</td></tr><tr><td>S4</td><td>Resolved</td><td>Recalculated CSV summaries match reported results; convergence and unsimulated-remediation limitations remain explicit.</td></tr><tr><td>S5</td><td>Resolved</td><td>Threshold-specific diagnostics now specify the model, comparison criterion, and reporting response.</td></tr><tr><td>S6</td><td>Resolved</td><td>Source filtering, overlap checks, monitor placement, and proprietary HRV limitations remain explicit.</td></tr><tr><td>S7</td><td>Resolved</td><td>Prospective experiment amendments retain design, estimand, adherence, carryover, and reporting requirements.</td></tr><tr><td>S8</td><td>Partly resolved</td><td>Routine safety refresh paths are implemented, but a stale response can hide an active notice; see M25.</td></tr><tr><td>S9</td><td>Resolved</td><td>Early stopping permits confirmatory analysis and requires reporting its date and reason.</td></tr><tr><td>S10</td><td>Resolved</td><td>Identifiable disclosure, inference across updates, and withdrawal limits remain acknowledged.</td></tr><tr><td>m1</td><td>Resolved</td><td>Reporting checklist retains the distinction between observational requirements and future experiments.</td></tr><tr><td>m2</td><td>Resolved</td><td>Conditional latent dynamics remain distinguished from observed mood variability.</td></tr><tr><td>m3</td><td>Resolved</td><td>Search details, device scope, and affiliations remain specified; exact record count was not independently reproduced.</td></tr><tr><td>M20</td><td>Resolved</td><td>Publication rereads the cutoff immediately before writing. Refits share one cutoff, waiting runs record it, and Trends suppresses stale tags. In-memory transition probes passed.</td></tr><tr><td>M21</td><td>Resolved</td><td>Idempotent migration retains study_start and preserves existing records.</td></tr><tr><td>M22</td><td>Resolved</td><td>Ultrahuman responses require the requested date, and current-day steps remain excluded.</td></tr><tr><td>M23</td><td>Resolved</td><td>Predictive checks use central 95% intervals, classify failures before rounding, and display failure markers and counts.</td></tr><tr><td>S20</td><td>Resolved</td><td>Deterministic contrast test covers observed yes, observed no, missing flags, and continuous shifts.</td></tr><tr><td>M24</td><td>Partly resolved</td><td>Submission, queue, resume, and reconnect paths pass ordinary in-memory checks. A new response-ordering race can reverse the notice; see M25.</td></tr><tr><td>S21</td><td>Resolved</td><td>Likelihood, coefficient priors, and joint ordering restriction now address the crossing concern described in the [VGAM documentation](https://search.r-project.org/CRAN/refmans/VGAM/html/cumulative.html). Diagnostic implementation is explicitly due before six months.</td></tr><tr><td>S22</td><td>Resolved</td><td>Fixed morning and afternoon tests assert both adherence measures and distinguish the former incorrect denominator.</td></tr>
+</tbody></table></div>
+<h4>Must fix</h4>
+<ol class="points"><li><strong>M25</strong> <span class="muted">(Section 2.11; software/static/js/rate.js:47-61,126-128)</span> A delayed safety refresh can overwrite a newer report&#39;s safety state. Executing the actual client script in memory reproduced this sequence: resume starts a refresh returning false; a subsequent threshold-crossing report shows the notice; the delayed false response hides it. The empty-queue timer does not restore the notice.
+  <br><em>Requested change:</em> Serialize safety refresh with report delivery or reject obsolete responses. Add a client regression test that delivers the older false response after the newer true response and verifies that the notice stays visible.</li></ol>
+
+
+<h4>Response</h4>
+<div class="response"><p>Thank you; the race was real, and running the page’s own script was
+the right way to find it.</p>
+<p><strong>M25.</strong> Accepted and fixed. The rating page numbers
+every request whose answer can change the safety notice: each report it
+sends, including queued ones, and each check when the page returns to
+the screen or reconnects. It applies an answer only if that request is
+still the latest one, so a slow answer to an older request can no longer
+undo a newer one (<code>rate.js</code>). A new test runs the actual
+<code>static/js/rate.js</code> in a minimal page with every request
+answered by hand:</p>
+<ol type="1">
+<li>The page returns to the screen and asks for the safety state.</li>
+<li>Before that answer arrives, a queued report crosses the threshold
+and the notice appears.</li>
+<li>The older answer arrives last, saying the rule is not met, and the
+notice stays visible.</li>
+<li>The newest check then decides.</li>
+</ol>
+<p>With the earlier code the test fails at step 3; with the fix it
+passes.</p>
+<p>This was the only point left in your fourth report. The participant
+decided to finalize the protocol with this fix instead of opening a
+fifth round; Section 3.4 and the review record say so.</p>
+</div>
+</section><section class="card review" id="round-4-grok-4.6">
+<h3>Grok 4.6: Accept</h3>
+<p class="small muted">xAI Grok 4.6 through the Grok command line tool (grok 1.0.30 (04b7ffed98c6) [stable]), reasoning effort xhigh; September 19, 2026.</p>
+<p><strong>Summary.</strong> Section 2.9.8 now specifies the proportional odds check as a diagnostic variant, not a change to ordinal-ar1-stan-v4, with independent N(0, 0.5) priors on the two threshold-specific coefficients, an ordering constraint for every report, and model version ordinal-ar1-ppo-check-v1 to be added before the 6-month analysis. The safety notice updates after reports the app sends and when a page returns to the screen or reconnects, and a fit is published only if it used the study start set at publication. I am satisfied the protocol can be finalized.</p>
+<h4>Points from the previous round</h4>
+<div class="table-wrap"><table><thead><tr><th>Point</th><th>Status</th><th>Comment</th></tr></thead><tbody>
+<tr><td>M1</td><td>Resolved</td><td>No regression: load_dataset still requires users.study_start and still drops earlier reports.</td></tr><tr><td>M2</td><td>Resolved</td><td>No regression: other screen time is still recoded when social media time is modeled.</td></tr><tr><td>M3</td><td>Resolved</td><td>No regression: the pre-report claim and the adjustment covariates are unchanged.</td></tr><tr><td>S1</td><td>Resolved</td><td>No regression.</td></tr><tr><td>S2</td><td>Resolved</td><td>No regression: the stored design files still match Section 2.6.</td></tr><tr><td>S3</td><td>Resolved</td><td>No regression: Ultrahuman values are still filed only under the requested date.</td></tr><tr><td>S4</td><td>Resolved</td><td>No regression: day_satisfaction.stan remains day-ordinal-ar1-stan-v2 and still takes confirmatory_scale as data.</td></tr><tr><td>S5</td><td>Resolved</td><td>No regression.</td></tr><tr><td>S6</td><td>Resolved</td><td>No regression.</td></tr><tr><td>S7</td><td>Resolved</td><td>No regression.</td></tr><tr><td>S8</td><td>Resolved</td><td>No regression: public results still replace confirmatory evidence labels, and the home headline still omits those factors.</td></tr><tr><td>S9</td><td>Resolved</td><td>Declined for a sound reason. Section 2.9.3 still states independent N(0, 1) imputation of the overnight block; sensitivity (7) remains the check.</td></tr><tr><td>S10</td><td>Resolved</td><td>No regression.</td></tr><tr><td>S11</td><td>Resolved</td><td>No regression.</td></tr><tr><td>S12</td><td>Resolved</td><td>No regression.</td></tr><tr><td>S13</td><td>Resolved</td><td>No regression.</td></tr><tr><td>m1</td><td>Resolved</td><td>No regression.</td></tr><tr><td>m2</td><td>Resolved</td><td>No regression; Section 3.2 still matches the code (last 30 backups).</td></tr><tr><td>m3</td><td>Resolved</td><td>No regression.</td></tr><tr><td>m4</td><td>Resolved</td><td>No regression; weekly adherence still counts only slots that have begun.</td></tr><tr><td>m5</td><td>Resolved</td><td>No regression; the Ultrahuman date-key rule is still implemented and tested.</td></tr><tr><td>m6</td><td>Resolved</td><td>No regression.</td></tr><tr><td>m7</td><td>Resolved</td><td>No regression.</td></tr><tr><td>m8</td><td>Resolved</td><td>No regression.</td></tr><tr><td>S20</td><td>Resolved</td><td>No regression: mood.stan and day_satisfaction.stan still take confirmatory_scale as data.</td></tr><tr><td>S21</td><td>Resolved</td><td>No regression: publishable still requires a match to the study start set at the call; tag comparisons on the trends page are now shown only from a run under that start.</td></tr><tr><td>S22</td><td>Resolved</td><td>No regression: Section 2.9.5 still covers other screen time dropped while social media time remains.</td></tr><tr><td>m20</td><td>Resolved</td><td>No regression; Section 2.6 still matches the stored first-run files.</td></tr><tr><td>m21</td><td>Resolved</td><td>No regression; begunSlots still counts only slots whose start has passed.</td></tr><tr><td>S23</td><td>Resolved</td><td>Section 2.9.8 now names a diagnostic variant, gives independent N(0, 0.5) priors on the two coefficients, requires ordered cumulative logits for every report (observed and imputed), and names ordinal-ar1-ppo-check-v1 to be added before the 6-month analysis.</td></tr>
+</tbody></table></div>
+
+
+<h4>Minor</h4>
+<ol class="points"><li><strong>m22</strong> <span class="muted">(2.9.8)</span> A factor that fails the proportional odds check is to be reported with both coefficients next to its confirmatory result. Those coefficients are on the standardized log-odds scale, while the confirmatory result is an odds ratio per natural unit, so the two numbers are not comparable as written.
+  <br><em>Requested change:</em> Say that the two threshold-specific effects are reported on the same scale as the confirmatory estimand (odds ratio per natural unit, with 95% intervals), or say that they are log-odds per standard deviation.</li></ol>
+<h4>Response</h4>
+<div class="response"><p>Thank you for the fourth review and for accepting the protocol.</p>
+<p><strong>m22.</strong> Accepted. Section 2.9.8 now says that a factor
+failing the proportional odds check is reported with both
+threshold-specific effects as odds ratios per natural unit with 95%
+intervals, the scale of its confirmatory result.</p>
+<p>The only other change after your report fixed the rating page’s
+handling of the safety notice. An older, slower answer from the server
+can no longer hide the notice after a newer one showed it, and a test
+covers this.</p>
 </div>
 </section>
 <h2 id="prompts">The instructions the reviewers received</h2>
