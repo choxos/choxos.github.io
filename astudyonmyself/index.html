@@ -63,7 +63,7 @@
         from one day to the next and days without reports are handled naturally. Factors are standardized and share a hierarchical shrinkage prior;
         cutpoints are ordered. Factors enter only with information available before the day's reports: last night's sleep and physiology, yesterday's
         behavior, and same-day context such as weather or a work day. Missing factor values are imputed within the model, which assumes they are missing
-        at random. Sampling uses NUTS in PyMC, four chains, with convergence checked by R-hat, effective sample size and divergences.</p>
+        at random. The model is written in Stan and fitted from R with cmdstanr (NUTS, four chains), with convergence checked by R-hat, effective sample size and divergences.</p>
       <p class="small">"Evidence" is the posterior probability that an effect points the way shown: strong at 97.5% or more (the 95% interval excludes zero),
         moderate at 90%, weak at 75%. With many factors some moderate results will be chance findings. These are associations in observational data
         from one person; they are not causal effects and say nothing about anyone else.</p>
