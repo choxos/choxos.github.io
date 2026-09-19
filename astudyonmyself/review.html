@@ -51,7 +51,8 @@ software.</li>
 <div class="table-wrap"><table>
 <thead><tr><th>Round</th><th>Protocol</th><th>GPT-6-Astra</th><th>Grok 4.6</th></tr></thead>
 <tbody><tr><td><a href="#round-1">Round 1</a></td><td><a href="versions/round-1.html">Version reviewed</a></td>
-<td>Revise</td><td>Revise</td></tr></tbody>
+<td>Revise</td><td>Revise</td></tr><tr><td><a href="#round-2">Round 2</a></td><td><a href="versions/round-2.html">Version reviewed</a></td>
+<td>Revise</td><td>Accept</td></tr></tbody>
 </table></div>
 <h2 id="round-1">Round 1</h2>
 <section class="card review" id="round-1-gpt-6-astra">
@@ -437,6 +438,177 @@ that must pass the R-hat and effective sample size checks, matching
 <p><strong>m8.</strong> Accepted. Section 2.7 notes that the Tailscale
 certificate publishes the computer’s name in public certificate
 transparency logs.</p>
+</div>
+</section><h2 id="round-2">Round 2</h2>
+<section class="card review" id="round-2-gpt-6-astra">
+<h3>GPT-6-Astra: Revise</h3>
+<p class="small muted">OpenAI GPT-6-Astra through the Codex command line tool (codex-cli 0.155.1), reasoning effort xhigh; September 19, 2026.</p>
+<p><strong>Summary.</strong> Most prior concerns are resolved, and reported design-analysis results agree with supplied CSVs. Remaining privacy and adherence discrepancies, plus new pilot-exclusion, migration, date-assignment, and predictive-check inconsistencies, prevent finalization. Review used source inspection and in-memory probes; R tests and new Stan fits could not run in the read-only environment.</p>
+<h4>Points from the previous round</h4>
+<div class="table-wrap"><table><thead><tr><th>Point</th><th>Status</th><th>Comment</th></tr></thead><tbody>
+<tr><td>M1</td><td>Resolved</td><td>Corrected context distinguishes the September 19 pilot from collection after finalization. The new implementation defect is addressed separately in M20.</td></tr><tr><td>M2</td><td>Resolved</td><td>Whole-day weather and evening context are explicitly identified as contemporaneous adjustment exceptions.</td></tr><tr><td>M3</td><td>Resolved</td><td>Weather now stops at yesterday in the participant&#39;s time zone; calendar-day aggregation is specified.</td></tr><tr><td>M4</td><td>Resolved</td><td>Outcome-dependent nonresponse is correctly acknowledged as capable of biasing associations and average mood.</td></tr><tr><td>M5</td><td>Resolved</td><td>Binary comparisons explicitly set each report&#39;s flag to 1 and 0, replacing its observed or imputed contribution.</td></tr><tr><td>M6</td><td>Resolved</td><td>Publication is gated by convergence; flagged private display is explicitly permitted, and confirmatory remediation is specified.</td></tr><tr><td>M7</td><td>Resolved</td><td>Evidence classification uses unrounded probabilities; rounding occurs only for reported values.</td></tr><tr><td>M8</td><td>Resolved</td><td>Generating and fitted scales are now distinguished. The corrected design analysis generates from rounded covariates and converts truth using each replicate&#39;s fitted standard deviations.</td></tr><tr><td>M9</td><td>Resolved</td><td>The supplied snapshot contains opt-in recovery assertions for both models, accurately described in Section 2.9.8.</td></tr><tr><td>M10</td><td>Resolved</td><td>The form saves edited fields only, preserving intervening automatic updates; conflicting writes now have an explicit rule.</td></tr><tr><td>M11</td><td>Resolved</td><td>Device POST responses return acknowledgments without stored values, including duplicate report submissions.</td></tr><tr><td>M12</td><td>Resolved</td><td>Nested intervals, levels, and dynamics are explicitly constructed, with tests for unexpected nested fields.</td></tr><tr><td>M13</td><td>Partly resolved</td><td>Storage boundaries are substantially corrected. Section 3.2 still misstates backup retention as 30 elapsed days instead of the latest 30 successful snapshots by default, and push-service visibility as timing only rather than delivery and application-identification metadata. Correct both claims; see maintenance.ts:207, push.ts:71, and [RFC 8292](https://www.rfc-editor.org/rfc/rfc8292.html).</td></tr><tr><td>M14</td><td>Partly resolved</td><td>Weekly reporting exists, but stats.ts:30 and :46 still count future slots today. One first-morning report yields 1/3 instead of 1/1. Count only begun slots in both denominators.</td></tr><tr><td>M15</td><td>Resolved</td><td>The clarified private Canadian setting provides a sound nonapplicability rationale for institutional TCPS review, with reassessment before experiments. See [TCPS scope](https://ethics.gc.ca/eng/policy-politique_interpretations_scope-portee.html).</td></tr><tr><td>M16</td><td>Resolved</td><td>[Golder and Macy](https://pubmed.ncbi.nlm.nih.gov/21960633/) supports the revised statement about daily and weekly expressed-mood rhythms.</td></tr><tr><td>S1</td><td>Resolved</td><td>Other screen time replaces total screen time when social media is modeled, and the addition estimand is explicit.</td></tr><tr><td>S2</td><td>Resolved</td><td>Independent-imputation limitations are acknowledged; type-appropriate, temporally informed multiple imputation is prespecified as a sensitivity analysis.</td></tr><tr><td>S3</td><td>Resolved</td><td>The revision adds one-report-per-slot and informative-nonresponse sensitivities, plus an operational reminder-response classification.</td></tr><tr><td>S4</td><td>Resolved</td><td>Expanded simulations, a precision target, Monte Carlo uncertainty, family-level results, and failed-fit counts are supplied. Short-chain and unsimulated-remediation limitations are explicit.</td></tr><tr><td>S5</td><td>Partly resolved</td><td>Prior prediction, dependence checks, and PSIS remediation are added. Threshold-specific association checks remain unspecified; add a check of proportional-odds adequacy.</td></tr><tr><td>S6</td><td>Partly resolved</td><td>The dictionary substantially improves measurement rules, but overlapping Apple Health samples, monitor placement, and the Ultrahuman HRV metric still need explicit definitions.</td></tr><tr><td>S7</td><td>Resolved</td><td>Prospective amendment requirements now cover estimands, adherence, deviations, periods, concealment, carryover, pretreatment adjustment, and reporting guidance.</td></tr><tr><td>S8</td><td>Partly resolved</td><td>Information thresholds and pause procedures are specified. Safety checks run only at /, while routine reminders open /rate/; specify a minimum evaluation frequency or check the reporting route.</td></tr><tr><td>S9</td><td>Resolved</td><td>Early stopping explicitly permits confirmatory classification and requires reporting the stopping date and reason.</td></tr><tr><td>S10</td><td>Resolved</td><td>Identifiable health disclosure, inference across updates, and limits on withdrawing public history are acknowledged.</td></tr><tr><td>m1</td><td>Resolved</td><td>Appendix B provides the requested item mapping and separates observational requirements from future experiment amendments.</td></tr><tr><td>m2</td><td>Resolved</td><td>The text identifies the conditional latent process and distinguishes innovation variability from observed mood variability.</td></tr><tr><td>m3</td><td>Resolved</td><td>Device scope and search details are supplied, and relevant manufacturer-associated papers are identified. The exact 33-record count was not independently reproduced.</td></tr>
+</tbody></table></div>
+<h4>Must fix</h4>
+<ol class="points"><li><strong>M20</strong> <span class="muted">(Sections 2.11 and 2.12; software/analysis/mood.R:68; software/server/analysis.ts:56)</span> An unset study_start defaults to 0000-01-01, permitting pilot observations in primary, secondary, and tag models. Changing study_start also leaves the analysis fingerprint unchanged, so existing fits can remain available for publication under an obsolete cutoff.
+  <br><em>Requested change:</em> Require a configured study start before any modeling. Include it in fit provenance and invalidation, and prevent use or publication of fits based on an obsolete cutoff. Test unset and changed start dates.</li><li><strong>M21</strong> <span class="muted">(software/server/schema.sql:10; software/server/db.ts:13; software/server/auth.ts)</span> The new users.study_start column has no migration. CREATE TABLE IF NOT EXISTS leaves an existing users table unchanged, while authentication now selects that column. An in-memory upgrade probe produced &#39;no such column: study_start&#39;.
+  <br><em>Requested change:</em> Add an idempotent migration for users.study_start and test upgrading a database with the previous users schema.</li><li><strong>M22</strong> <span class="muted">(Appendix A; software/server/sources.ts:83)</span> When Ultrahuman omits the requested date, the connector substitutes the first returned date&#39;s metrics and stores them under the requested date. A synthetic September 19 request with only September 18 data was saved as September 19, contradicting the promised date alignment.
+  <br><em>Requested change:</em> Skip responses without the requested date, or store returned records under their actual dates. Determine finished-day eligibility from the stored date and test mismatched-date responses.</li><li><strong>M23</strong> <span class="muted">(Section 2.9.8; software/analysis/mood.R:337; software/server/pages.ts:360)</span> The new per-fit predictive-check failure rule uses a central 95% interval, but current summaries export only 5th and 95th percentiles, a central 90% interval. No separate 95% bounds or failure assessment are supplied.
+  <br><em>Requested change:</em> Provide the specified 95% bounds and failure reporting, or explicitly describe a separate planned assessment and distinguish it from the current 90% dashboard display.</li></ol>
+<h4>Should fix</h4>
+<ol class="points"><li><strong>S20</strong> <span class="muted">(software/analysis/tests/testthat/test-recovery.R:28)</span> The new binary-contrast test checks direction agreement only. The previous erroneous x + 1 comparison would also pass, so this test does not protect the correction.
+  <br><em>Requested change:</em> Add a deterministic numerical comparison with explicit predictions at 1 and 0, including observed and missing flags. This need not run Stan.</li></ol>
+
+<h4>Response</h4>
+<div class="response"><p>Thank you for checking the revision so closely, code included. The
+four new points and the five partly resolved ones are answered below;
+each software change comes with a test. Separately, the prior scale of
+the confirmatory factors is now passed to both Stan models as data, so
+that sensitivity analysis (1) needs no change to the model code. At the
+default of 0.5 the model is the same, so its version stays
+ordinal-ar1-stan-v4 (Section 2.9.9).</p>
+<p><strong>M13.</strong> Accepted; both statements were wrong. Section
+3.2 now says that the 30 most recent backups are kept, so a backup is
+removed once 30 newer ones exist, about a month of daily backups. It
+also says that Apple’s push service cannot read the encrypted reminders
+but learns when each one is sent, its size and the device it goes to,
+and identifies the sending server by its public key and contact address,
+the address of the study’s code repository (RFC 8292).</p>
+<p><strong>M14.</strong> Accepted and fixed. Both the 14-day completion
+and weekly adherence now count only slots that have begun, so a single
+report in the first morning slot is 1 of 1, not 1 of 3
+(<code>begunSlots</code> in <code>stats.ts</code>). The test starts a
+study today and checks that the eligible slots equal the slots begun so
+far, and that both measures agree. Section 2.3.3 already defined
+adherence this way; the code now matches it.</p>
+<p><strong>S5.</strong> Accepted. Section 2.9.8 now specifies the check
+at 6 and 12 months. Each confirmatory factor gets a refit with separate
+coefficients for its two thresholds (Sad against Meh or Happy, and Sad
+or Meh against Happy). The assumption fails for that factor if the 95%
+interval of the difference between the two coefficients excludes zero. A
+factor that fails is reported with both coefficients next to its
+confirmatory result, and the decision rule is unchanged.</p>
+<p><strong>S6.</strong> Accepted.</p>
+<ul>
+<li><strong>Apple Health.</strong> The values use the samples of one
+source only, selected by source in the phone automation: the Ultrahuman
+app for sleep, heart rate variability, resting heart rate and steps, and
+the Apple Watch for exercise minutes and time in daylight. Samples
+another device records for the same period are never added. The pilot
+checks that the Ultrahuman app’s asleep samples do not overlap one
+another. The README’s recipe now includes the filter.</li>
+<li><strong>Monitor placement.</strong> The monitor stays where it is at
+the study start, a place recorded in the pilot notes, and a move is a
+dated note.</li>
+<li><strong>HRV.</strong> The factor is the nightly average that the
+Partner API returns (<code>hrv.avg</code>). Ultrahuman states that its
+ring uses RMSSD in its sleep and recovery scores but does not publish
+how this value is computed. The factor is therefore the device’s value
+and is never combined with another device’s. Apple Health stores ring
+values under its SDNN type whatever the statistic (Appendix A).</li>
+</ul>
+<p><strong>S8.</strong> Accepted and implemented. The rating page that
+reminders open now evaluates the safety rule and shows the same notice
+as the home page, so the rule is checked at every report made in the app
+(Section 2.11; <code>ratePage</code>).</p>
+<p><strong>M20.</strong> Accepted and fixed.</p>
+<ul>
+<li><strong>Unset start.</strong> <code>study_start()</code> now stops
+every model, primary, secondary and tag comparisons alike, while the
+study start is unset; the run is recorded as waiting with that
+reason.</li>
+<li><strong>Record of the start used.</strong> Each fit records the
+study start it used (<code>data.study_start</code>), and the start is
+part of the fingerprint, so changing it triggers a refit.</li>
+<li><strong>Older fits.</strong> A fit whose recorded start differs from
+the current one is flagged on the dashboard, and
+<code>publishable()</code> refuses it. The same gate applies to the
+hourly job and to the manual publish command.</li>
+<li><strong>Tests.</strong> An R test covers the unset start (no
+dataset, day dataset or tag comparison). A Node test checks that a
+changed start changes the fingerprint and blocks publishing the older
+fit (Sections 2.9.8, 2.11 and 2.12).</li>
+</ul>
+<p><strong>M21.</strong> Accepted and fixed; thank you for the upgrade
+probe. <code>users.study_start</code> is now in the migration list,
+which is exported as <code>migrate()</code>. A test builds a database
+with the previous users table, runs the migration twice and checks the
+added columns and their defaults.</p>
+<p><strong>M22.</strong> Accepted and fixed. The connector files values
+only under the requested date and only when the answer contains that
+date; otherwise it stores nothing and reports the date as missing. A
+test stubs the service to answer today’s request with yesterday’s
+metrics and checks that nothing is stored (Appendix A).</p>
+<p><strong>M23.</strong> Accepted and fixed. The check now uses the
+2.5th and 97.5th percentiles of the replicated shares and records, per
+category, whether the observed share lies outside them, using unrounded
+values. The dashboard marks each failed share, describes the interval as
+the central 95%, and counts the failures among the diagnostics (Section
+2.9.8).</p>
+<p><strong>S20.</strong> Accepted. The yes/no comparison is now a
+separate function, <code>contrast()</code>, and a test without Stan
+checks it numerically. It uses two draws and three reports whose flag is
+observed as yes, observed as no and missing. The test checks that every
+report’s linear predictor is set exactly to the flag’s yes and no
+values, which the earlier value-plus-one comparison would fail, and that
+a continuous factor moves one unit up from each report’s own value.</p>
+</div>
+</section><section class="card review" id="round-2-grok-4.6">
+<h3>Grok 4.6: Accept</h3>
+<p class="small muted">xAI Grok 4.6 through the Grok command line tool (grok 1.0.30 (04b7ffed98c6) [stable]), reasoning effort xhigh; September 19, 2026.</p>
+<p><strong>Summary.</strong> The three blocking errors are fixed. Pilot reports are excluded from every model once the study start is set; H3 is judged on other screen time and social media time held fixed; and the pre-report claim is limited to last night&#39;s sleep and physiology and the previous day&#39;s behavior, with same-day weather and evening context named as adjustment covariates. The design analysis, secondary day-satisfaction model, and connector specifications match the revised text. I am satisfied the protocol can be finalized. Remaining items are ordinary: the primary model still imputes the overnight block independently; the confirmatory prior scale is hardcoded, so sensitivity (1) cannot vary it without editing Stan; and an unset study start still lets every report into a fit.</p>
+<h4>Points from the previous round</h4>
+<div class="table-wrap"><table><thead><tr><th>Point</th><th>Status</th><th>Comment</th></tr></thead><tbody>
+<tr><td>M1</td><td>Resolved</td><td>Pilot and confirmatory collection are separated. load_dataset filters on users.study_start, with a test, and 6- and 12-month analyses count from that date.</td></tr><tr><td>M2</td><td>Resolved</td><td>When social media time is modeled, screen time is recoded to other screen time. If social media time is dropped, H3a is judged on total screen time and H3b is not testable. Implemented in build_factors with a test.</td></tr><tr><td>M3</td><td>Resolved</td><td>The pre-report claim is limited to overnight physiology and lagged behavior. Same-day weather and the work, travel, and sick flags are named as adjustment covariates, not confirmatory factors.</td></tr><tr><td>S1</td><td>Resolved</td><td>Country and private setting, a patient and public involvement statement, a dated public record in place of a registry, and a SPIRIT 2025 map in Appendix B are in. SPENT items for experiments stay with the amendments, as in S12.</td></tr><tr><td>S2</td><td>Resolved</td><td>Signed effects on every confirmatory factor, 30% evening missingness, and the family-wise support rate are in. They ran 40 studies at 12 months rather than 50, for cost, which is a sound reason.</td></tr><tr><td>S3</td><td>Resolved</td><td>Appendix A and Section 2.4 specify the Ultrahuman endpoint and date rule, Apple Health alternatives, the unofficial Amazon method and token, VOC as an index, calendar-day indoor means, waking-hour bias, and a Partner API switch as an amendment.</td></tr><tr><td>S4</td><td>Resolved</td><td>day_satisfaction.stan and secondary.R lock model version day-ordinal-ar1-stan-v2. Days without an evening rating are left out. A change is an amendment.</td></tr><tr><td>S5</td><td>Resolved</td><td>The estimand is report-level. Sensitivity (8) keeps the first report in each slot.</td></tr><tr><td>S6</td><td>Resolved</td><td>They declined required evening fields, kept the not-testable rule, stated the aim to complete H3 and H4 every evening, and put 30% evening missingness in the design analysis.</td></tr><tr><td>S7</td><td>Resolved</td><td>Golder and Macy (2011) supports time of day and weekday. Power et al. (2015) is background on PM2.5 and anxiety, not momentary mood.</td></tr><tr><td>S8</td><td>Resolved</td><td>Public results replace confirmatory evidence labels with &#39;judged at 6 and 12 months&#39; and keep intervals and p_positive. The home page headline omits those factors. Covered by a test.</td></tr><tr><td>S9</td><td>Partly resolved</td><td>Section 2.9.3 names the overnight block that goes missing together, and sensitivity (7) imputes by chained equations. The primary model still draws independent N(0, 1) values for those five factors.</td></tr><tr><td>S10</td><td>Resolved</td><td>Complete-case is per confirmatory factor with other factors imputed as usual. The metric model is defined. Same-day behavior is exploratory only.</td></tr><tr><td>S11</td><td>Resolved</td><td>The repository will be public under GPL-3.0 at the named address when the protocol is finalized. &#39;On request&#39; is gone.</td></tr><tr><td>S12</td><td>Resolved</td><td>Experiments are unblinded self-experiments. Version 3.0 fixes the observational phase and the amendment template. Each amendment will cover the SPENT items for periods, sequence, concealment, and washout.</td></tr><tr><td>S13</td><td>Resolved</td><td>syncWeather uses yesterday in the participant&#39;s time zone. Weather is for the home location even on travel days.</td></tr><tr><td>m1</td><td>Resolved</td><td>Section 2.3.1 now says both timestamps are stored so the delay can be computed.</td></tr><tr><td>m2</td><td>Resolved</td><td>Section 2.8 matches the hourly job: an encrypted snapshot when about a day has passed, after a GPG recipient is set, last 30 kept.</td></tr><tr><td>m3</td><td>Resolved</td><td>Section 2.9.3 names a factor that never varies as a reason to drop it.</td></tr><tr><td>m4</td><td>Resolved</td><td>Weekly slot adherence from the study start is computed and shown on the private Trends page.</td></tr><tr><td>m5</td><td>Resolved</td><td>Both connectors are implemented. The Amazon path has been checked live; Ultrahuman waits on the Partner API token, with Apple Health until then.</td></tr><tr><td>m6</td><td>Resolved</td><td>phi is day-to-day carry-over of latent mood, analogous to but not the same as Kuppens et al. emotional inertia.</td></tr><tr><td>m7</td><td>Resolved</td><td>Section 2.9.8 names the parameters that must pass R-hat and ESS, matching summarize_fit.</td></tr><tr><td>m8</td><td>Resolved</td><td>Section 2.7 notes that the Tailscale certificate publishes the computer name in public CT logs.</td></tr>
+</tbody></table></div>
+
+<h4>Should fix</h4>
+<ol class="points"><li><strong>S20</strong> <span class="muted">(2.9.9; software/analysis/mood.stan)</span> Sensitivity (1) says the confirmatory factors will be refit with prior standard deviations 0.25 and 1. mood.stan hardcodes those coefficients as 0.5 times beta_z. prior_scale only sets tau, so the confirmatory half of sensitivity (1) cannot be run without editing the locked model.
+  <br><em>Requested change:</em> Pass the confirmatory scale as data, the same way prior_scale is passed for tau, so 0.25 and 1 do not require a model amendment.</li><li><strong>S21</strong> <span class="muted">(2.11; software/analysis/mood.R; software/server/analysis.ts fingerprint)</span> If study_start is unset, load_dataset treats every report as confirmatory data, so a fit can start on the pilot. Changing study_start is not part of the analysis fingerprint, so an existing fit is not redone when the date is set.
+  <br><em>Requested change:</em> Refuse to fit until study_start is set, and include that date in the fingerprint so a change forces a refit.</li><li><strong>S22</strong> <span class="muted">(2.9.5; software/analysis/mood.R build_factors)</span> When social media time is kept, screen time becomes other screen time and is missing wherever either field is missing. Other screen time can then fall under the 50% or 10-day rule while social media time remains, so H3a is dropped and H3b is still tested. The protocol only states the reverse case.
+  <br><em>Requested change:</em> State that if other screen time is left out while social media time remains, H3a is not testable and H3b is judged on social media time.</li></ol>
+<h4>Minor</h4>
+<ol class="points"><li><strong>m20</strong> <span class="muted">(2.6)</span> The first design run is said to have had 33 studies per condition at 12 months. The stored files have 33 studies with effects and 32 under the null.
+  <br><em>Requested change:</em> Report 33 and 32, or say about 33 per condition.</li><li><strong>m21</strong> <span class="muted">(2.3.3; software/server/stats.ts weeklyAdherence)</span> For the week in progress, eligible slots are three times the number of calendar days, including slots that have not begun.
+  <br><em>Requested change:</em> Count only slots whose start has passed, or say the current week is provisional. Completed weeks are already exact.</li></ol>
+<h4>Response</h4>
+<div class="response"><p>Thank you for the second review and for accepting the protocol. The
+remaining points are answered below; the software changes come with
+tests.</p>
+<p><strong>S9 (round 1).</strong> Kept as a stated limitation. Modeling
+the joint missingness of the overnight block inside the Stan model would
+require a model of the joint distribution of five device measures and
+their autocorrelation, for nights without the ring, which the design
+analysis assumed to be one in ten. The protocol states that the primary
+model imputes these factors independently (Section 2.9.3). Sensitivity
+analysis (7), multiple imputation by chained equations with the adjacent
+days as predictors, imputes the block with its correlations and shows
+whether the independence matters.</p>
+<p><strong>S20.</strong> Accepted and implemented. Both Stan models now
+take the confirmatory prior scale as data
+(<code>confirmatory_scale</code>), like the scale of τ, and
+<code>refit.R</code> accepts <code>--prior-scale</code> and
+<code>--confirmatory-scale</code>. Sensitivity analysis (1) therefore
+runs without any change to the model code. At the default of 0.5 the
+model is the same, so its version stays ordinal-ar1-stan-v4; the slow
+tests were run again on the changed code (Section 2.9.9).</p>
+<p><strong>S21.</strong> Accepted and implemented. No model, primary,
+secondary or tag comparison, is fitted while the study start is unset.
+Each fit records the study start it used, and the start is part of the
+fingerprint, so a change triggers a refit. A fit made under another
+start is flagged on the dashboard and is never published. Tests cover
+the unset start in R and the changed start in Node (Sections 2.9.8, 2.11
+and 2.12).</p>
+<p><strong>S22.</strong> Accepted. Section 2.9.5 now states the case:
+other screen time is missing whenever either of its entries is, so it
+can be left out while social media time stays. Then H3a is not testable,
+and H3b is judged on social media time without other screen time held
+fixed.</p>
+<p><strong>m20.</strong> Accepted. Section 2.6 now gives 33 studies with
+effects and 32 under the null for the first run at 12 months.</p>
+<p><strong>m21.</strong> Accepted and fixed. Weekly adherence and the
+14-day completion now count only the slots that have begun, so the
+current week is exact as well; a test covers a study that starts
+today.</p>
 </div>
 </section>
 <h2 id="prompts">The instructions the reviewers received</h2>
