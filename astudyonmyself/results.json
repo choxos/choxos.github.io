@@ -1,0 +1,412 @@
+{
+ "updated": "2026-10-04T00:00:00.000Z",
+ "model_version": "ordinal-ar1-stan-v4",
+ "sample": {
+  "ratings": 34,
+  "days": 14
+ },
+ "predictors": [
+  {
+   "label": "Indoor PM2.5 yesterday",
+   "unit_label": "per 10 µg/m³",
+   "lag": 1,
+   "odds_ratio": {
+    "est": 2.0317,
+    "lo": 0,
+    "hi": 15136363.4942
+   },
+   "d_happy_pp": {
+    "est": 9.0024,
+    "lo": -73.5591,
+    "hi": 36.1606
+   },
+   "d_sad_pp": {
+    "est": -1.6327,
+    "lo": -11.703,
+    "hi": 91.6168
+   },
+   "p_positive": 0.6158,
+   "direction": "better",
+   "evidence": "unclear"
+  },
+  {
+   "label": "Sleep last night",
+   "unit_label": "per extra hour",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 0.7195,
+    "lo": 0.265,
+    "hi": 1.9687
+   },
+   "d_happy_pp": {
+    "est": -4.7748,
+    "lo": -20.8455,
+    "hi": 8.5794
+   },
+   "d_sad_pp": {
+    "est": 1.4544,
+    "lo": -2.9231,
+    "hi": 11.2677
+   },
+   "p_positive": 0.2562,
+   "direction": "worse",
+   "evidence": "confirmatory"
+  },
+  {
+   "label": "Temperature",
+   "unit_label": "per 5 °C",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 1.4137,
+    "lo": 0.4497,
+    "hi": 34.507
+   },
+   "d_happy_pp": {
+    "est": 4.7264,
+    "lo": -12.1036,
+    "hi": 26.6992
+   },
+   "d_sad_pp": {
+    "est": -1.1489,
+    "lo": -9.0122,
+    "hi": 4.8318
+   },
+   "p_positive": 0.7482,
+   "direction": "better",
+   "evidence": "unclear"
+  },
+  {
+   "label": "Day length",
+   "unit_label": "per hour",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 0.7444,
+    "lo": 0.0078,
+    "hi": 9.6051
+   },
+   "d_happy_pp": {
+    "est": -4.4012,
+    "lo": -61.8927,
+    "hi": 20.9847
+   },
+   "d_sad_pp": {
+    "est": 1.2869,
+    "lo": -5.8908,
+    "hi": 59.6415
+   },
+   "p_positive": 0.3505,
+   "direction": "worse",
+   "evidence": "unclear"
+  },
+  {
+   "label": "Indoor VOC yesterday",
+   "unit_label": "per 100 index points",
+   "lag": 1,
+   "odds_ratio": {
+    "est": 1.2166,
+    "lo": 0.0014,
+    "hi": 19984.7664
+   },
+   "d_happy_pp": {
+    "est": 2.6601,
+    "lo": -69.4156,
+    "hi": 33.1555
+   },
+   "d_sad_pp": {
+    "est": -0.6086,
+    "lo": -10.5278,
+    "hi": 79.8845
+   },
+   "p_positive": 0.5572,
+   "direction": "better",
+   "evidence": "unclear"
+  },
+  {
+   "label": "Skin temperature deviation",
+   "unit_label": "per 0.5 °C",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 0.9422,
+    "lo": 0.1451,
+    "hi": 2.3371
+   },
+   "d_happy_pp": {
+    "est": -0.8557,
+    "lo": -28.1526,
+    "hi": 10.337
+   },
+   "d_sad_pp": {
+    "est": 0.2201,
+    "lo": -3.3925,
+    "hi": 15.524
+   },
+   "p_positive": 0.3999,
+   "direction": "worse",
+   "evidence": "unclear"
+  },
+  {
+   "label": "Resting heart rate",
+   "unit_label": "per 5 bpm",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 1.063,
+    "lo": 0.3248,
+    "hi": 5.498
+   },
+   "d_happy_pp": {
+    "est": 0.8452,
+    "lo": -16.917,
+    "hi": 17.5619
+   },
+   "d_sad_pp": {
+    "est": -0.209,
+    "lo": -5.9789,
+    "hi": 7.7452
+   },
+   "p_positive": 0.5915,
+   "direction": "better",
+   "evidence": "unclear"
+  },
+  {
+   "label": "Precipitation",
+   "unit_label": "per 5 mm",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 1.0547,
+    "lo": 0.2493,
+    "hi": 7.6362
+   },
+   "d_happy_pp": {
+    "est": 0.7617,
+    "lo": -20.9853,
+    "hi": 19.7936
+   },
+   "d_sad_pp": {
+    "est": -0.1848,
+    "lo": -6.5875,
+    "hi": 10.8156
+   },
+   "p_positive": 0.5759,
+   "direction": "better",
+   "evidence": "unclear"
+  },
+  {
+   "label": "Overnight HRV",
+   "unit_label": "per 10 ms",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 1.0537,
+    "lo": 0.3561,
+    "hi": 6.6287
+   },
+   "d_happy_pp": {
+    "est": 0.7283,
+    "lo": -15.1165,
+    "hi": 19.1329
+   },
+   "d_sad_pp": {
+    "est": -0.188,
+    "lo": -6.1118,
+    "hi": 7.3621
+   },
+   "p_positive": 0.5801,
+   "direction": "better",
+   "evidence": "unclear"
+  },
+  {
+   "label": "Sleep efficiency",
+   "unit_label": "per 10 points",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 0.9841,
+    "lo": 0.1942,
+    "hi": 3.4101
+   },
+   "d_happy_pp": {
+    "est": -0.2255,
+    "lo": -23.9015,
+    "hi": 14.2571
+   },
+   "d_sad_pp": {
+    "est": 0.0567,
+    "lo": -4.7358,
+    "hi": 12.43
+   },
+   "p_positive": 0.469,
+   "direction": "worse",
+   "evidence": "unclear"
+  },
+  {
+   "label": "Outdoor PM2.5",
+   "unit_label": "per 10 µg/m³",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 1.0157,
+    "lo": 0.1031,
+    "hi": 8.8919
+   },
+   "d_happy_pp": {
+    "est": 0.2186,
+    "lo": -34.5794,
+    "hi": 20.9536
+   },
+   "d_sad_pp": {
+    "est": -0.0516,
+    "lo": -6.5652,
+    "hi": 20.2127
+   },
+   "p_positive": 0.5218,
+   "direction": "better",
+   "evidence": "unclear"
+  },
+  {
+   "label": "Steps yesterday",
+   "unit_label": "per 1,000 steps",
+   "lag": 1,
+   "odds_ratio": {
+    "est": 1.0103,
+    "lo": 0.7882,
+    "hi": 1.2971
+   },
+   "d_happy_pp": {
+    "est": 0.1368,
+    "lo": -3.544,
+    "hi": 3.6889
+   },
+   "d_sad_pp": {
+    "est": -0.0331,
+    "lo": -1.3463,
+    "hi": 1.4958
+   },
+   "p_positive": 0.5301,
+   "direction": "better",
+   "evidence": "confirmatory"
+  },
+  {
+   "label": "Sunshine",
+   "unit_label": "per hour",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 0.9934,
+    "lo": 0.7959,
+    "hi": 1.1771
+   },
+   "d_happy_pp": {
+    "est": -0.0926,
+    "lo": -3.1502,
+    "hi": 2.1131
+   },
+   "d_sad_pp": {
+    "est": 0.0241,
+    "lo": -0.736,
+    "hi": 1.3153
+   },
+   "p_positive": 0.4199,
+   "direction": "worse",
+   "evidence": "unclear"
+  }
+ ],
+ "time_of_day": [
+  {
+   "level": "morning",
+   "p_happy": {
+    "est": 0.7475,
+    "lo": 0.5887,
+    "hi": 0.8663
+   }
+  },
+  {
+   "level": "afternoon",
+   "p_happy": {
+    "est": 0.7023,
+    "lo": 0.525,
+    "hi": 0.8486
+   }
+  },
+  {
+   "level": "evening",
+   "p_happy": {
+    "est": 0.72,
+    "lo": 0.5411,
+    "hi": 0.8647
+   }
+  }
+ ],
+ "weekday": [
+  {
+   "level": "Mon",
+   "p_happy": {
+    "est": 0.6846,
+    "lo": 0.4703,
+    "hi": 0.834
+   }
+  },
+  {
+   "level": "Tue",
+   "p_happy": {
+    "est": 0.7352,
+    "lo": 0.5343,
+    "hi": 0.8819
+   }
+  },
+  {
+   "level": "Wed",
+   "p_happy": {
+    "est": 0.7168,
+    "lo": 0.5113,
+    "hi": 0.8679
+   }
+  },
+  {
+   "level": "Thu",
+   "p_happy": {
+    "est": 0.7527,
+    "lo": 0.5604,
+    "hi": 0.893
+   }
+  },
+  {
+   "level": "Fri",
+   "p_happy": {
+    "est": 0.7321,
+    "lo": 0.5318,
+    "hi": 0.8784
+   }
+  },
+  {
+   "level": "Sat",
+   "p_happy": {
+    "est": 0.7429,
+    "lo": 0.5386,
+    "hi": 0.8928
+   }
+  },
+  {
+   "level": "Sun",
+   "p_happy": {
+    "est": 0.7588,
+    "lo": 0.5689,
+    "hi": 0.8975
+   }
+  }
+ ],
+ "dynamics": {
+  "phi": {
+   "est": 0.0858,
+   "lo": -0.8025,
+   "hi": 0.9234,
+   "p_positive": 0.551
+  },
+  "sigma_day": {
+   "est": 0.875,
+   "lo": 0.0501,
+   "hi": 2.356
+  }
+ },
+ "diagnostics": {
+  "max_rhat": 1.00134420192017,
+  "min_ess_bulk": 2882.08432316415,
+  "divergences": 0,
+  "converged": true
+ }
+}
