@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-05T17:00:00.000Z",
+ "updated": "2026-10-06T01:00:00.000Z",
  "model_version": "ordinal-ar1-stan-v4",
  "sample": {
   "ratings": 36,
@@ -11,21 +11,21 @@
    "unit_label": "per 10 µg/m³",
    "lag": 1,
    "odds_ratio": {
-    "est": 1.8282,
-    "lo": 0.0003,
-    "hi": 2175741.0841
+    "est": 1.9381,
+    "lo": 0.0001,
+    "hi": 2979506.9468
    },
    "d_happy_pp": {
-    "est": 7.7717,
-    "lo": -73.7765,
-    "hi": 33.9354
+    "est": 8.0498,
+    "lo": -73.5815,
+    "hi": 33.691
    },
    "d_sad_pp": {
-    "est": -1.3958,
-    "lo": -11.042,
-    "hi": 89.1251
+    "est": -1.4221,
+    "lo": -10.9057,
+    "hi": 89.5857
    },
-   "p_positive": 0.6171,
+   "p_positive": 0.6132,
    "direction": "better",
    "evidence": "unclear"
   },
@@ -34,21 +34,21 @@
    "unit_label": "per extra hour",
    "lag": 0,
    "odds_ratio": {
-    "est": 0.7141,
-    "lo": 0.2663,
-    "hi": 1.9629
+    "est": 0.7092,
+    "lo": 0.2575,
+    "hi": 1.9749
    },
    "d_happy_pp": {
-    "est": -4.7517,
-    "lo": -20.7085,
-    "hi": 8.4886
+    "est": -4.8546,
+    "lo": -21.0953,
+    "hi": 8.6125
    },
    "d_sad_pp": {
-    "est": 1.4094,
-    "lo": -2.6992,
-    "hi": 10.6597
+    "est": 1.3784,
+    "lo": -2.6095,
+    "hi": 10.636
    },
-   "p_positive": 0.2539,
+   "p_positive": 0.259,
    "direction": "worse",
    "evidence": "confirmatory"
   },
@@ -57,45 +57,22 @@
    "unit_label": "per hour",
    "lag": 0,
    "odds_ratio": {
-    "est": 0.7461,
-    "lo": 0.0132,
-    "hi": 4.3578
+    "est": 0.7302,
+    "lo": 0.0118,
+    "hi": 4.1085
    },
    "d_happy_pp": {
-    "est": -4.166,
-    "lo": -57.7099,
-    "hi": 15.458
+    "est": -4.4366,
+    "lo": -59.717,
+    "hi": 14.9857
    },
    "d_sad_pp": {
-    "est": 1.2593,
-    "lo": -4.3227,
-    "hi": 49.0007
+    "est": 1.2725,
+    "lo": -4.397,
+    "hi": 53.5303
    },
-   "p_positive": 0.3188,
+   "p_positive": 0.3104,
    "direction": "worse",
-   "evidence": "unclear"
-  },
-  {
-   "label": "Temperature",
-   "unit_label": "per 5 °C",
-   "lag": 0,
-   "odds_ratio": {
-    "est": 1.1622,
-    "lo": 0.4787,
-    "hi": 8.7165
-   },
-   "d_happy_pp": {
-    "est": 1.9627,
-    "lo": -10.7177,
-    "hi": 20.3866
-   },
-   "d_sad_pp": {
-    "est": -0.4882,
-    "lo": -6.5934,
-    "hi": 4.4123
-   },
-   "p_positive": 0.6778,
-   "direction": "better",
    "evidence": "unclear"
   },
   {
@@ -103,21 +80,44 @@
    "unit_label": "per 100 index points",
    "lag": 1,
    "odds_ratio": {
-    "est": 1.1015,
-    "lo": 0.0016,
-    "hi": 9934.1353
+    "est": 1.156,
+    "lo": 0.002,
+    "hi": 9727.6037
    },
    "d_happy_pp": {
-    "est": 1.3207,
-    "lo": -70.8319,
-    "hi": 31.7098
+    "est": 2.0007,
+    "lo": -69.6557,
+    "hi": 31.7054
    },
    "d_sad_pp": {
-    "est": -0.3054,
-    "lo": -10.1269,
-    "hi": 79.3236
+    "est": -0.4319,
+    "lo": -9.9139,
+    "hi": 77.2189
    },
-   "p_positive": 0.5374,
+   "p_positive": 0.552,
+   "direction": "better",
+   "evidence": "unclear"
+  },
+  {
+   "label": "Temperature",
+   "unit_label": "per 5 °C",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 1.1577,
+    "lo": 0.4619,
+    "hi": 8.7828
+   },
+   "d_happy_pp": {
+    "est": 1.9959,
+    "lo": -11.6215,
+    "hi": 20.264
+   },
+   "d_sad_pp": {
+    "est": -0.4772,
+    "lo": -6.7123,
+    "hi": 4.4751
+   },
+   "p_positive": 0.6698,
    "direction": "better",
    "evidence": "unclear"
   },
@@ -126,44 +126,21 @@
    "unit_label": "per 5 bpm",
    "lag": 0,
    "odds_ratio": {
-    "est": 1.0788,
-    "lo": 0.4222,
-    "hi": 5.4665
+    "est": 1.0795,
+    "lo": 0.4251,
+    "hi": 4.9963
    },
    "d_happy_pp": {
-    "est": 1.0422,
-    "lo": -12.6855,
-    "hi": 17.0573
+    "est": 1.0645,
+    "lo": -12.9794,
+    "hi": 16.9919
    },
    "d_sad_pp": {
-    "est": -0.2563,
-    "lo": -5.741,
-    "hi": 5.1652
+    "est": -0.2607,
+    "lo": -5.6061,
+    "hi": 5.1872
    },
-   "p_positive": 0.6218,
-   "direction": "better",
-   "evidence": "unclear"
-  },
-  {
-   "label": "Overnight HRV",
-   "unit_label": "per 10 ms",
-   "lag": 0,
-   "odds_ratio": {
-    "est": 1.0416,
-    "lo": 0.3611,
-    "hi": 5.5111
-   },
-   "d_happy_pp": {
-    "est": 0.5779,
-    "lo": -15.3718,
-    "hi": 17.3655
-   },
-   "d_sad_pp": {
-    "est": -0.1405,
-    "lo": -5.5138,
-    "hi": 6.985
-   },
-   "p_positive": 0.57,
+   "p_positive": 0.6191,
    "direction": "better",
    "evidence": "unclear"
   },
@@ -172,21 +149,44 @@
    "unit_label": "per 5 mm",
    "lag": 0,
    "odds_ratio": {
-    "est": 1.0417,
-    "lo": 0.2509,
-    "hi": 6.3218
+    "est": 1.0411,
+    "lo": 0.2503,
+    "hi": 6.489
    },
    "d_happy_pp": {
-    "est": 0.5596,
-    "lo": -21.0863,
-    "hi": 18.4973
+    "est": 0.5532,
+    "lo": -20.4854,
+    "hi": 18.6648
    },
    "d_sad_pp": {
-    "est": -0.1362,
-    "lo": -5.8031,
-    "hi": 10.1509
+    "est": -0.1291,
+    "lo": -5.7369,
+    "hi": 9.6047
    },
-   "p_positive": 0.568,
+   "p_positive": 0.5606,
+   "direction": "better",
+   "evidence": "unclear"
+  },
+  {
+   "label": "Overnight HRV",
+   "unit_label": "per 10 ms",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 1.0418,
+    "lo": 0.3662,
+    "hi": 5.0662
+   },
+   "d_happy_pp": {
+    "est": 0.551,
+    "lo": -15.4539,
+    "hi": 17.3547
+   },
+   "d_sad_pp": {
+    "est": -0.1324,
+    "lo": -5.2798,
+    "hi": 6.9172
+   },
+   "p_positive": 0.5731,
    "direction": "better",
    "evidence": "unclear"
   },
@@ -195,45 +195,22 @@
    "unit_label": "per 0.5 °C",
    "lag": 0,
    "odds_ratio": {
-    "est": 0.9776,
-    "lo": 0.2095,
-    "hi": 2.4405
+    "est": 0.976,
+    "lo": 0.2263,
+    "hi": 2.3541
    },
    "d_happy_pp": {
-    "est": -0.3214,
-    "lo": -22.3997,
-    "hi": 10.4297
+    "est": -0.3374,
+    "lo": -21.4524,
+    "hi": 10.3149
    },
    "d_sad_pp": {
-    "est": 0.0866,
-    "lo": -3.4587,
-    "hi": 11.1978
+    "est": 0.0814,
+    "lo": -3.4353,
+    "hi": 10.5772
    },
-   "p_positive": 0.4426,
+   "p_positive": 0.4489,
    "direction": "worse",
-   "evidence": "unclear"
-  },
-  {
-   "label": "Outdoor PM2.5",
-   "unit_label": "per 10 µg/m³",
-   "lag": 0,
-   "odds_ratio": {
-    "est": 1.0039,
-    "lo": 0.1106,
-    "hi": 8.371
-   },
-   "d_happy_pp": {
-    "est": 0.057,
-    "lo": -34.2768,
-    "hi": 19.8814
-   },
-   "d_sad_pp": {
-    "est": -0.0129,
-    "lo": -6.239,
-    "hi": 19.5689
-   },
-   "p_positive": 0.5084,
-   "direction": "better",
    "evidence": "unclear"
   },
   {
@@ -241,21 +218,21 @@
    "unit_label": "per hour",
    "lag": 0,
    "odds_ratio": {
-    "est": 0.9961,
-    "lo": 0.8051,
-    "hi": 1.1728
+    "est": 0.9943,
+    "lo": 0.8218,
+    "hi": 1.1537
    },
    "d_happy_pp": {
-    "est": -0.056,
-    "lo": -3.0331,
-    "hi": 2.0711
+    "est": -0.0777,
+    "lo": -2.7323,
+    "hi": 1.872
    },
    "d_sad_pp": {
-    "est": 0.0133,
-    "lo": -0.7478,
-    "hi": 1.1823
+    "est": 0.0186,
+    "lo": -0.664,
+    "hi": 1.1086
    },
-   "p_positive": 0.4419,
+   "p_positive": 0.4234,
    "direction": "worse",
    "evidence": "unclear"
   },
@@ -264,21 +241,21 @@
    "unit_label": "per 10 points",
    "lag": 0,
    "odds_ratio": {
-    "est": 0.9981,
-    "lo": 0.244,
-    "hi": 3.2662
+    "est": 0.9948,
+    "lo": 0.2536,
+    "hi": 3.2738
    },
    "d_happy_pp": {
-    "est": -0.0263,
-    "lo": -20.8342,
-    "hi": 13.2744
+    "est": -0.075,
+    "lo": -20.3325,
+    "hi": 13.1136
    },
    "d_sad_pp": {
-    "est": 0.0053,
-    "lo": -4.5747,
-    "hi": 9.7657
+    "est": 0.0168,
+    "lo": -4.4082,
+    "hi": 9.9935
    },
-   "p_positive": 0.4945,
+   "p_positive": 0.4852,
    "direction": "worse",
    "evidence": "unclear"
   },
@@ -287,47 +264,70 @@
    "unit_label": "per 1,000 steps",
    "lag": 1,
    "odds_ratio": {
-    "est": 0.9995,
-    "lo": 0.7892,
-    "hi": 1.2924
+    "est": 1.0006,
+    "lo": 0.7863,
+    "hi": 1.2997
    },
    "d_happy_pp": {
-    "est": -0.0059,
-    "lo": -3.512,
-    "hi": 3.3828
+    "est": 0.0068,
+    "lo": -3.5369,
+    "hi": 3.4745
    },
    "d_sad_pp": {
-    "est": 0.0016,
-    "lo": -1.2979,
-    "hi": 1.47
+    "est": -0.0014,
+    "lo": -1.2863,
+    "hi": 1.4272
    },
-   "p_positive": 0.4984,
-   "direction": "worse",
+   "p_positive": 0.5021,
+   "direction": "better",
    "evidence": "confirmatory"
+  },
+  {
+   "label": "Outdoor PM2.5",
+   "unit_label": "per 10 µg/m³",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 0.9999,
+    "lo": 0.1027,
+    "hi": 7.9098
+   },
+   "d_happy_pp": {
+    "est": -0.0013,
+    "lo": -34.4593,
+    "hi": 19.8049
+   },
+   "d_sad_pp": {
+    "est": 0.0003,
+    "lo": -6.0476,
+    "hi": 20.8647
+   },
+   "p_positive": 0.4996,
+   "direction": "worse",
+   "evidence": "unclear"
   }
  ],
  "time_of_day": [
   {
    "level": "morning",
    "p_happy": {
-    "est": 0.758,
-    "lo": 0.6012,
-    "hi": 0.8766
+    "est": 0.7608,
+    "lo": 0.6015,
+    "hi": 0.8784
    }
   },
   {
    "level": "afternoon",
    "p_happy": {
-    "est": 0.7204,
-    "lo": 0.5443,
-    "hi": 0.8607
+    "est": 0.7224,
+    "lo": 0.5484,
+    "hi": 0.8598
    }
   },
   {
    "level": "evening",
    "p_happy": {
-    "est": 0.7357,
-    "lo": 0.5605,
+    "est": 0.7385,
+    "lo": 0.5652,
     "hi": 0.8735
    }
   }
@@ -336,76 +336,76 @@
   {
    "level": "Mon",
    "p_happy": {
-    "est": 0.6926,
-    "lo": 0.4776,
-    "hi": 0.8429
+    "est": 0.6963,
+    "lo": 0.484,
+    "hi": 0.8499
    }
   },
   {
    "level": "Tue",
    "p_happy": {
-    "est": 0.7455,
-    "lo": 0.5466,
-    "hi": 0.8891
+    "est": 0.7501,
+    "lo": 0.5456,
+    "hi": 0.8896
    }
   },
   {
    "level": "Wed",
    "p_happy": {
-    "est": 0.7284,
-    "lo": 0.5212,
-    "hi": 0.8739
+    "est": 0.7291,
+    "lo": 0.5287,
+    "hi": 0.8743
    }
   },
   {
    "level": "Thu",
    "p_happy": {
-    "est": 0.7634,
-    "lo": 0.5693,
-    "hi": 0.901
+    "est": 0.7644,
+    "lo": 0.5735,
+    "hi": 0.9006
    }
   },
   {
    "level": "Fri",
    "p_happy": {
-    "est": 0.7381,
-    "lo": 0.5379,
-    "hi": 0.8817
+    "est": 0.7424,
+    "lo": 0.5426,
+    "hi": 0.8865
    }
   },
   {
    "level": "Sat",
    "p_happy": {
-    "est": 0.76,
-    "lo": 0.5742,
-    "hi": 0.9016
+    "est": 0.7609,
+    "lo": 0.5686,
+    "hi": 0.9006
    }
   },
   {
    "level": "Sun",
    "p_happy": {
-    "est": 0.7776,
-    "lo": 0.5937,
-    "hi": 0.9066
+    "est": 0.7779,
+    "lo": 0.6046,
+    "hi": 0.9073
    }
   }
  ],
  "dynamics": {
   "phi": {
-   "est": 0.1379,
-   "lo": -0.8037,
-   "hi": 0.9288,
-   "p_positive": 0.5775
+   "est": 0.1363,
+   "lo": -0.8102,
+   "hi": 0.927,
+   "p_positive": 0.5782
   },
   "sigma_day": {
-   "est": 0.9239,
-   "lo": 0.0657,
-   "hi": 2.3553
+   "est": 0.9276,
+   "lo": 0.058,
+   "hi": 2.3342
   }
  },
  "diagnostics": {
-  "max_rhat": 1.00116148377711,
-  "min_ess_bulk": 2634.92059822072,
+  "max_rhat": 1.00227994625417,
+  "min_ess_bulk": 2838.04427501618,
   "divergences": 0,
   "converged": true
  }
