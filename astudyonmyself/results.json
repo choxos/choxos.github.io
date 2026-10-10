@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T04:00:00.000Z",
+ "updated": "2026-10-10T19:00:00.000Z",
  "model_version": "ordinal-ar1-stan-v4",
  "sample": {
   "ratings": 45,
@@ -11,21 +11,21 @@
    "unit_label": "per 10 µg/m³",
    "lag": 1,
    "odds_ratio": {
-    "est": 1.7947,
+    "est": 1.8622,
     "lo": 0.0001,
-    "hi": 8452499.874
+    "hi": 9123991.9336
    },
    "d_happy_pp": {
-    "est": 6.628,
-    "lo": -77.0179,
-    "hi": 30.5701
+    "est": 7.1482,
+    "lo": -76.8924,
+    "hi": 30.5969
    },
    "d_sad_pp": {
-    "est": -1.0745,
-    "lo": -9.4845,
-    "hi": 92.3859
+    "est": -1.0873,
+    "lo": -9.5551,
+    "hi": 90.5118
    },
-   "p_positive": 0.6035,
+   "p_positive": 0.6058,
    "direction": "better",
    "evidence": "unclear"
   },
@@ -34,21 +34,21 @@
    "unit_label": "per 100 index points",
    "lag": 1,
    "odds_ratio": {
-    "est": 1.7582,
-    "lo": 0.0107,
-    "hi": 48203.7978
+    "est": 1.7466,
+    "lo": 0.0103,
+    "hi": 19581.3705
    },
    "d_happy_pp": {
-    "est": 6.4108,
-    "lo": -63.6081,
-    "hi": 29.5652
+    "est": 6.3639,
+    "lo": -63.4458,
+    "hi": 29.5343
    },
    "d_sad_pp": {
-    "est": -1.0431,
-    "lo": -8.9089,
-    "hi": 55.2903
+    "est": -1.0686,
+    "lo": -9.0078,
+    "hi": 53.1768
    },
-   "p_positive": 0.6356,
+   "p_positive": 0.6339,
    "direction": "better",
    "evidence": "unclear"
   },
@@ -57,21 +57,21 @@
    "unit_label": "per hour",
    "lag": 0,
    "odds_ratio": {
-    "est": 0.8161,
-    "lo": 0.0413,
-    "hi": 3.3521
+    "est": 0.8244,
+    "lo": 0.0462,
+    "hi": 3.3339
    },
    "d_happy_pp": {
-    "est": -2.6543,
-    "lo": -47.7871,
-    "hi": 11.6249
+    "est": -2.4743,
+    "lo": -46.2117,
+    "hi": 11.6877
    },
    "d_sad_pp": {
-    "est": 0.6615,
-    "lo": -2.9747,
-    "hi": 31.553
+    "est": 0.5993,
+    "lo": -3.1111,
+    "hi": 30.4084
    },
-   "p_positive": 0.3325,
+   "p_positive": 0.3404,
    "direction": "worse",
    "evidence": "unclear"
   },
@@ -80,21 +80,21 @@
    "unit_label": "per 5 bpm",
    "lag": 0,
    "odds_ratio": {
-    "est": 1.1114,
-    "lo": 0.4558,
-    "hi": 5.9903
+    "est": 1.112,
+    "lo": 0.4821,
+    "hi": 6.2244
    },
    "d_happy_pp": {
-    "est": 1.3492,
-    "lo": -10.8924,
-    "hi": 16.6071
+    "est": 1.3648,
+    "lo": -10.0211,
+    "hi": 16.7348
    },
    "d_sad_pp": {
     "est": -0.2834,
-    "lo": -5.1473,
-    "hi": 3.7566
+    "lo": -5.1049,
+    "hi": 3.8907
    },
-   "p_positive": 0.6491,
+   "p_positive": 0.6485,
    "direction": "better",
    "evidence": "unclear"
   },
@@ -103,21 +103,21 @@
    "unit_label": "per extra hour",
    "lag": 0,
    "odds_ratio": {
-    "est": 0.906,
-    "lo": 0.4582,
-    "hi": 1.7517
+    "est": 0.9068,
+    "lo": 0.4623,
+    "hi": 1.7566
    },
    "d_happy_pp": {
-    "est": -1.2785,
-    "lo": -10.9358,
-    "hi": 6.6577
+    "est": -1.2621,
+    "lo": -10.9406,
+    "hi": 6.6451
    },
    "d_sad_pp": {
-    "est": 0.2992,
-    "lo": -2.0271,
-    "hi": 4.4746
+    "est": 0.292,
+    "lo": -2.232,
+    "hi": 4.6415
    },
-   "p_positive": 0.383,
+   "p_positive": 0.3871,
    "direction": "worse",
    "evidence": "confirmatory"
   },
@@ -126,21 +126,21 @@
    "unit_label": "per 5 °C",
    "lag": 0,
    "odds_ratio": {
-    "est": 1.0882,
-    "lo": 0.5084,
-    "hi": 5.016
+    "est": 1.0955,
+    "lo": 0.5032,
+    "hi": 5.4232
    },
    "d_happy_pp": {
-    "est": 1.0465,
-    "lo": -9.0874,
-    "hi": 15.5638
+    "est": 1.1497,
+    "lo": -9.587,
+    "hi": 15.524
    },
    "d_sad_pp": {
-    "est": -0.2352,
-    "lo": -4.7177,
-    "hi": 3.4367
+    "est": -0.2467,
+    "lo": -4.7106,
+    "hi": 3.6348
    },
-   "p_positive": 0.6455,
+   "p_positive": 0.651,
    "direction": "better",
    "evidence": "unclear"
   },
@@ -149,21 +149,21 @@
    "unit_label": "per 10 ms",
    "lag": 0,
    "odds_ratio": {
-    "est": 1.0819,
-    "lo": 0.4653,
-    "hi": 5.5903
+    "est": 1.086,
+    "lo": 0.461,
+    "hi": 5.7491
    },
    "d_happy_pp": {
-    "est": 0.977,
-    "lo": -10.4028,
-    "hi": 16.2165
+    "est": 1.0202,
+    "lo": -10.3416,
+    "hi": 16.069
    },
    "d_sad_pp": {
-    "est": -0.2115,
-    "lo": -4.8717,
-    "hi": 3.8773
+    "est": -0.2173,
+    "lo": -4.8359,
+    "hi": 4.062
    },
-   "p_positive": 0.6251,
+   "p_positive": 0.63,
    "direction": "better",
    "evidence": "unclear"
   },
@@ -172,22 +172,45 @@
    "unit_label": "per 0.5 °C",
    "lag": 0,
    "odds_ratio": {
-    "est": 0.9811,
-    "lo": 0.3345,
-    "hi": 2.1015
+    "est": 0.9781,
+    "lo": 0.3234,
+    "hi": 2.0744
    },
    "d_happy_pp": {
-    "est": -0.2463,
-    "lo": -15.3865,
-    "hi": 8.3229
+    "est": -0.2849,
+    "lo": -15.2659,
+    "hi": 8.3063
    },
    "d_sad_pp": {
-    "est": 0.0582,
-    "lo": -2.525,
-    "hi": 6.6352
+    "est": 0.0646,
+    "lo": -2.5394,
+    "hi": 6.3462
    },
-   "p_positive": 0.4371,
+   "p_positive": 0.4439,
    "direction": "worse",
+   "evidence": "unclear"
+  },
+  {
+   "label": "Precipitation",
+   "unit_label": "per 5 mm",
+   "lag": 0,
+   "odds_ratio": {
+    "est": 1.021,
+    "lo": 0.5744,
+    "hi": 2.3897
+   },
+   "d_happy_pp": {
+    "est": 0.2721,
+    "lo": -7.2905,
+    "hi": 9.4215
+   },
+   "d_sad_pp": {
+    "est": -0.0596,
+    "lo": -2.8782,
+    "hi": 2.6456
+   },
+   "p_positive": 0.5749,
+   "direction": "better",
    "evidence": "unclear"
   },
   {
@@ -195,67 +218,44 @@
    "unit_label": "per 1,000 steps",
    "lag": 1,
    "odds_ratio": {
-    "est": 1.019,
-    "lo": 0.818,
-    "hi": 1.2844
+    "est": 1.0162,
+    "lo": 0.8175,
+    "hi": 1.2919
    },
    "d_happy_pp": {
-    "est": 0.229,
-    "lo": -2.7506,
-    "hi": 3.0022
+    "est": 0.2005,
+    "lo": -2.7673,
+    "hi": 3.0043
    },
    "d_sad_pp": {
-    "est": -0.0489,
-    "lo": -1.0786,
-    "hi": 0.9834
+    "est": -0.043,
+    "lo": -1.0308,
+    "hi": 1.0191
    },
-   "p_positive": 0.5676,
+   "p_positive": 0.5576,
    "direction": "better",
    "evidence": "confirmatory"
-  },
-  {
-   "label": "Precipitation",
-   "unit_label": "per 5 mm",
-   "lag": 0,
-   "odds_ratio": {
-    "est": 1.0181,
-    "lo": 0.5623,
-    "hi": 2.3423
-   },
-   "d_happy_pp": {
-    "est": 0.2185,
-    "lo": -7.749,
-    "hi": 9.1886
-   },
-   "d_sad_pp": {
-    "est": -0.0493,
-    "lo": -2.8596,
-    "hi": 2.7337
-   },
-   "p_positive": 0.5628,
-   "direction": "better",
-   "evidence": "unclear"
   },
   {
    "label": "Outdoor PM2.5",
    "unit_label": "per 10 µg/m³",
    "lag": 0,
    "odds_ratio": {
-    "est": 0.987,
-    "lo": 0.064,
-    "hi": 7.1337
+    "est": 0.9932,
+    "lo": 0.0697,
+    "hi": 7.8561
    },
    "d_happy_pp": {
-    "est": -0.1651,
-    "lo": -38.9539,
-    "hi": 17.3534
+    "est": -0.0891,
+    "lo": -37.6437,
+    "hi": 17.9514
    },
    "d_sad_pp": {
-    "est": 0.0333,
-    "lo": -4.8295,
-    "hi": 23.5247
+    "est": 0.0164,
+    "lo": -5.1467,
+    "hi": 22.0203
    },
-   "p_positive": 0.4814,
+   "p_positive": 0.4899,
    "direction": "worse",
    "evidence": "unclear"
   },
@@ -264,21 +264,21 @@
    "unit_label": "per hour",
    "lag": 0,
    "odds_ratio": {
-    "est": 0.9926,
-    "lo": 0.7734,
-    "hi": 1.1804
+    "est": 0.9942,
+    "lo": 0.7771,
+    "hi": 1.1803
    },
    "d_happy_pp": {
-    "est": -0.097,
-    "lo": -3.3653,
-    "hi": 2.0357
+    "est": -0.0768,
+    "lo": -3.2691,
+    "hi": 2.0152
    },
    "d_sad_pp": {
-    "est": 0.0217,
-    "lo": -0.6524,
-    "hi": 1.223
+    "est": 0.0174,
+    "lo": -0.6608,
+    "hi": 1.192
    },
-   "p_positive": 0.4184,
+   "p_positive": 0.4289,
    "direction": "worse",
    "evidence": "unclear"
   },
@@ -287,21 +287,21 @@
    "unit_label": "per 10 points",
    "lag": 0,
    "odds_ratio": {
-    "est": 1.0054,
-    "lo": 0.3693,
-    "hi": 3.2605
+    "est": 1.0051,
+    "lo": 0.3566,
+    "hi": 3.0655
    },
    "d_happy_pp": {
-    "est": 0.0688,
-    "lo": -14.366,
-    "hi": 12.0293
+    "est": 0.059,
+    "lo": -14.645,
+    "hi": 11.6971
    },
    "d_sad_pp": {
     "est": -0.0133,
-    "lo": -3.5326,
-    "hi": 5.7828
+    "lo": -3.6524,
+    "hi": 5.9239
    },
-   "p_positive": 0.5149,
+   "p_positive": 0.5139,
    "direction": "better",
    "evidence": "unclear"
   }
@@ -310,25 +310,25 @@
   {
    "level": "morning",
    "p_happy": {
-    "est": 0.7885,
-    "lo": 0.6482,
-    "hi": 0.8928
+    "est": 0.79,
+    "lo": 0.6476,
+    "hi": 0.8964
    }
   },
   {
    "level": "afternoon",
    "p_happy": {
-    "est": 0.7633,
-    "lo": 0.6044,
-    "hi": 0.8797
+    "est": 0.7632,
+    "lo": 0.6061,
+    "hi": 0.8793
    }
   },
   {
    "level": "evening",
    "p_happy": {
-    "est": 0.7574,
-    "lo": 0.5993,
-    "hi": 0.8763
+    "est": 0.7561,
+    "lo": 0.597,
+    "hi": 0.8758
    }
   }
  ],
@@ -336,76 +336,76 @@
   {
    "level": "Mon",
    "p_happy": {
-    "est": 0.7312,
-    "lo": 0.5311,
-    "hi": 0.8656
+    "est": 0.7308,
+    "lo": 0.5325,
+    "hi": 0.8639
    }
   },
   {
    "level": "Tue",
    "p_happy": {
-    "est": 0.7833,
-    "lo": 0.6067,
-    "hi": 0.9027
+    "est": 0.7848,
+    "lo": 0.6041,
+    "hi": 0.9076
    }
   },
   {
    "level": "Wed",
    "p_happy": {
-    "est": 0.7689,
-    "lo": 0.5899,
-    "hi": 0.8938
+    "est": 0.7677,
+    "lo": 0.5946,
+    "hi": 0.8925
    }
   },
   {
    "level": "Thu",
    "p_happy": {
-    "est": 0.7956,
-    "lo": 0.6151,
-    "hi": 0.9134
+    "est": 0.7955,
+    "lo": 0.6265,
+    "hi": 0.9166
    }
   },
   {
    "level": "Fri",
    "p_happy": {
-    "est": 0.7569,
-    "lo": 0.5726,
-    "hi": 0.887
+    "est": 0.755,
+    "lo": 0.5713,
+    "hi": 0.89
    }
   },
   {
    "level": "Sat",
    "p_happy": {
-    "est": 0.7872,
-    "lo": 0.6038,
-    "hi": 0.9126
+    "est": 0.7892,
+    "lo": 0.606,
+    "hi": 0.9115
    }
   },
   {
    "level": "Sun",
    "p_happy": {
-    "est": 0.8027,
-    "lo": 0.6303,
-    "hi": 0.9166
+    "est": 0.8029,
+    "lo": 0.6317,
+    "hi": 0.9159
    }
   }
  ],
  "dynamics": {
   "phi": {
-   "est": 0.3592,
-   "lo": -0.7679,
-   "hi": 0.9447,
-   "p_positive": 0.6685
+   "est": 0.3736,
+   "lo": -0.7666,
+   "hi": 0.9471,
+   "p_positive": 0.6798
   },
   "sigma_day": {
-   "est": 0.9984,
-   "lo": 0.0948,
-   "hi": 2.395
+   "est": 0.999,
+   "lo": 0.0785,
+   "hi": 2.3773
   }
  },
  "diagnostics": {
-  "max_rhat": 1.00150399080986,
-  "min_ess_bulk": 1715.28938950936,
+  "max_rhat": 1.00153700808494,
+  "min_ess_bulk": 1995.85330578105,
   "divergences": 0,
   "converged": true
  }
